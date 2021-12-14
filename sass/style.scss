@@ -3,12 +3,14 @@
 
 
 @import './variables';
-@import '../includes/hero';
+
+
 
 
 
 body {
     font-family: $font-primary;
+
     .btn {
         font-size: 1.125rem;
         transition: all .3s ease-in-out;

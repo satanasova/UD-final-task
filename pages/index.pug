@@ -1,10 +1,19 @@
 extend template.pug
-include ../mixins/heroContent
+include ../components/hero/hero
 
 block head 
+    link(rel="stylesheet", href="./css/index.css")
     title Home
 
-block heroContent
-    +heroContent('home')
+block content
+    +hero()
+        .container.p-5 
+            .row.ps-3.py-5 
+                .col-10
+                    h1 Transportation services around the World
+                    .watermark Unbelievable Digital 
+                .col-7
+                    p.text-regular.py-4 Curabitur congue finibus lorem, at dignissim metus elementum sit amet. Mauris eget dapibus quam. Integer a ante rutrum, semper risus a, blandit elit. Nunc dolor purus, condimentum ut lorem in, tincidunt consequat erat.
+                    button.btn.btn-primary.btn-arrow.px-5 Consultation
     
 

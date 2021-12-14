@@ -1,6 +1,14 @@
 extend template.pug
-include ../mixins/heroContent
+include ../components/hero/hero
 
 block head 
     link(rel="stylesheet", href="./css/about.css")
     title About
+
+block content
+    +hero(false, 'https://rolso.elipso.site/wp-content/uploads/sites/20/2021/01/transportation-and-logistics.jpg')
+        h1 about content
+
+    .container 
+        //- +gallery()
+        //-     h1

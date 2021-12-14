@@ -1,0 +1,10 @@
+extend template.pug
+include ../components/hero/hero
+
+block head 
+    link(rel="stylesheet", href="./css/services.css")
+    title Services
+
+block content
+    +hero()
+        h1 Services
