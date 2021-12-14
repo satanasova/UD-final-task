@@ -1,0 +1,76 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        script(type="module" src="./js/script.js" defer) 
+
+        block head
+
+    body 
+        block header 
+            header(class="header position-absolute start-0 end-0 text-white")
+                .container.border-bottom.px-5
+                    row
+                        .header-top.d-flex.justify-content-between.pt-5
+                            a.header-logo.ps-3(href="./index.html") 
+                                img.img-fluid(src="../images/logo.png", alt="logo")
+                            .header-btns 
+                                button.btn.btn-primary.px-5.me-4 Calculator
+                                button.btn.btn-outline-light.px-5 Tracking
+                    row 
+                        .header-bottom.d-flex.justify-content-between.align-items-center.pt-3
+                            nav(class="col-7 nav justify-content-between")
+                                .nav-item.dropdown
+                                    a(class="nav-link dropdown-toggle" href="index.html").
+                                        home
+                                    ul(class="dropdown-menu")
+                                        li
+                                            a(class="dropdown-item" href="#") Home 2
+                                        li
+                                            a(class="dropdown-item" href="#") Home 3
+                                
+                                .nav-item.dropdown
+                                    a(class="nav-link dropdown-toggle" href="about.html").
+                                        about
+                                    ul(class="dropdown-menu" )
+                                        li
+                                            a(class="dropdown-item" href="#") Quote
+                                        li
+                                            a(class="dropdown-item" href="#") Warehouse
+                                        li
+                                            a(class="dropdown-item" href="#") FAQs
+                                        li
+                                            a(class="dropdown-item" href="#") Prices
+                                        li
+                                            a(class="dropdown-item" href="#") 404
+
+                                .nav-item.dropdown
+                                    a(class="nav-link dropdown-toggle" href="services.html").
+                                        services
+                                    ul(class="dropdown-menu" )
+                                        li
+                                            a(class="dropdown-item" href="#") Single Service
+                                        li
+                                            a(class="dropdown-item" href="#") Projects
+                                        li
+                                            a(class="dropdown-item" href="#") Calculator
+
+                                .nav-item.dropdown
+                                    a(class="nav-link dropdown-toggle" href="blog.html").
+                                        blog
+                                    ul(class="dropdown-menu" )
+                                        li
+                                            a(class="dropdown-item" href="#") Post Details
+
+                                .nav-item 
+                                    a(class="nav-link" href="#") contacts   
+                            p.header-phone.mb-0 +8 (495) 989 2011
+            
+        section.hero.text-white.overflow-hidden
+            block heroContent 
+        block content
+
+        block footer
+            footer.footer.bg-dark.text-white.p-5 Footer
