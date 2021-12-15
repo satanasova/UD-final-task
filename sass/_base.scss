@@ -1,0 +1,105 @@
+@import './variables';
+
+body {
+    font-family: $font-primary;
+    color: $color-body;
+
+    a {
+        text-decoration: none;
+        &, &:hover, &:visited {
+            color: inherit;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            cursor: pointer;
+        }
+    }
+
+    .btn {
+        font-size: 1.125rem;
+        transition: all .3s ease-in-out;
+        border-radius: 0;
+        font-weight: 500;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &-outline-light {
+            &:hover {
+                background-color: transparent;
+                color: inherit;
+            }
+        }
+
+        &-primary {
+            background-color: #0F0FB1;
+            border-color: #0F0FB1;
+            &:hover {
+                background-color: darken(#0F0FB1, 10%);
+                border-color: darken(#0F0FB1, 10%);
+            }
+        }
+
+        &-arrow {
+            position: relative;
+            padding: .78rem;
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                border-left: 6px solid white;
+                border-top: 6px solid transparent;
+                border-bottom: 6px solid transparent;
+                top: 50%;
+                right: -2.06rem;
+                transform: translateY(-50%);
+
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 3.25rem;
+                height: 100%;
+                top: 0;
+                right: 0;
+                transform: translate(100%, -1px);
+                background-color: darken(#0F0FB1, 10%);
+                border: 1px solid darken(#0F0FB1, 10%);
+                box-sizing: content-box;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 4.875rem;
+        font-weight: 700;
+    }
+
+    h2,h3,h4 {
+        font-weight: 800;
+    }
+
+    .page-title {
+        color: $color_title;
+        font-weight: 800;
+    }
+
+    .text-regular {
+        font-family: $font-secondary;
+        font-size: 1.0625rem; // 17px
+    }
+
+    .text-small {
+        font-family: $font-secondary;
+        font-size: 1.0625rem; // 17px
+        font-weight: 400;
+        color: rgba(225, 225, 225, 1);
+        
+    }
+}

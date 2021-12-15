@@ -7811,11 +7811,17 @@ textarea.form-control-lg {
     display: none !important; } }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #382933; }
   body a {
     text-decoration: none; }
     body a, body a:hover, body a:visited {
       color: inherit; }
+  body ul {
+    padding-left: 0; }
+    body ul li {
+      list-style-type: none;
+      cursor: pointer; }
   body .btn {
     font-size: 1.125rem;
     transition: all .3s ease-in-out;
@@ -7860,10 +7866,14 @@ body {
   body h1, body .h1 {
     font-size: 4.875rem;
     font-weight: 700; }
+  body h2, body .h2, body h3, body .h3, body h4, body .h4 {
+    font-weight: 800; }
+  body .page-title {
+    color: #19456b;
+    font-weight: 800; }
   body .text-regular {
     font-family: "Rubik", sans-serif;
-    font-size: 1.0625rem;
-    font-weight: 600; }
+    font-size: 1.0625rem; }
   body .text-small {
     font-family: "Rubik", sans-serif;
     font-size: 1.0625rem;
@@ -7922,8 +7932,6 @@ body {
     font-size: 1.125rem;
     font-weight: 500; }
     .footer-top .footer-nav li {
-      list-style-type: none;
-      cursor: pointer;
       display: flex;
       align-items: center;
       transition: all .3s ease-in-out; }
