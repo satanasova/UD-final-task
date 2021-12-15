@@ -7812,6 +7812,10 @@ textarea.form-control-lg {
 
 body {
   font-family: "Poppins", sans-serif; }
+  body a {
+    text-decoration: none; }
+    body a, body a:hover, body a:visited {
+      color: inherit; }
   body .btn {
     font-size: 1.125rem;
     transition: all .3s ease-in-out;
@@ -7860,6 +7864,11 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 1.0625rem;
     font-weight: 600; }
+  body .text-small {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: #e1e1e1; }
 
 .header {
   z-index: 1;
@@ -7903,3 +7912,52 @@ body {
         display: none; }
   .header-bottom .header-phone {
     font-weight: 700; }
+
+.footer {
+  background: linear-gradient(135deg, #00008E 0%, #017280 100%); }
+  .footer-top .social-icon {
+    width: 4rem;
+    height: 4rem; }
+  .footer-top .footer-nav {
+    font-size: 1.125rem;
+    font-weight: 500; }
+    .footer-top .footer-nav li {
+      list-style-type: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: all .3s ease-in-out; }
+      .footer-top .footer-nav li:not(first-child) {
+        margin-bottom: 1.3rem; }
+      .footer-top .footer-nav li:hover {
+        transform: translateY(0.5rem); }
+      .footer-top .footer-nav li::before {
+        content: '';
+        margin-right: .5rem;
+        display: inline-block;
+        border-left: 4px solid white;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent; }
+  .footer-top .input-group .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    font-family: "Rubik", sans-serif;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    color: inherit; }
+    .footer-top .input-group .form-control::placeholder {
+      color: inherit; }
+  .footer-top .input-group-text {
+    background-color: #0F0FB1;
+    border-color: #0F0FB1;
+    padding-left: .9rem;
+    padding-right: .9rem; }
+  .footer-bottom .footer-contacts:not(:nth-child(2)) {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .footer-bottom .footer-contacts:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .footer-bottom .footer-contacts .contact-title {
+    font-size: 1.0625rem;
+    font-family: "Rubik", sans-serif;
+    color: #e1e1e1; }
+  .footer-bottom .footer-contacts .contact-details {
+    font-size: 1.125rem; }

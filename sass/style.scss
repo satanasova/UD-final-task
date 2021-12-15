@@ -5,11 +5,17 @@
 @import './variables';
 
 
-
-
-
 body {
     font-family: $font-primary;
+
+    a {
+        text-decoration: none;
+        // color: inherit;
+
+        &, &:hover, &:visited {
+            color: inherit;
+        }
+    }
 
     .btn {
         font-size: 1.125rem;
@@ -75,8 +81,16 @@ body {
 
     .text-regular {
         font-family: $font-secondary;
-        font-size: 1.0625rem;
+        font-size: 1.0625rem; // 17px
         font-weight: 600;
+    }
+
+    .text-small {
+        font-family: $font-secondary;
+        font-size: 1.0625rem; // 17px
+        font-weight: 400;
+        color: rgba(225, 225, 225, 1);
+        
     }
 }
 
@@ -150,4 +164,89 @@ body {
 
     
 
+}
+
+.footer {
+    background: linear-gradient(135deg, #00008E 0%, #017280 100%);
+
+    &-top {
+        .social {
+            &-icon {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        .footer-nav {
+            font-size: 1.125rem;
+            font-weight: 500;
+            li {
+                list-style-type: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                transition: all .3s ease-in-out;
+                &:not(first-child) {
+                    margin-bottom: 1.3rem;
+                }
+                &:hover {
+                    transform: translateY(.5rem);
+                }
+                &::before {
+                        content: '';
+                        margin-right: .5rem;
+                        display: inline-block;
+                        border-left: 4px solid white;
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+                }
+            }
+        }
+
+        .input-group {
+            .form-control {
+                background: rgba(255, 255, 255, 0.1);
+                font-family: $font-secondary;
+                padding-top: .9rem;
+                padding-bottom: .9rem;
+                color: inherit;
+                &::placeholder {
+                    color: inherit;
+                }
+            }
+
+            &-text {
+                background-color: $color_primary;
+                border-color: $color_primary;
+                padding-left: .9rem;
+                padding-right: .9rem;
+            }
+
+        }
+    }
+
+    &-bottom {
+        .footer-contacts {
+            &:not(:nth-child(2)) {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            &:nth-child(2) {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .contact {
+                &-title {
+                    font-size: 1.0625rem;
+                    font-family: $font-secondary;
+                    color: rgba(225, 225, 225, 1);
+                    ;
+                }
+
+                &-details {
+                    font-size: 1.125rem;
+
+                }
+            }
+        }
+    }
 }

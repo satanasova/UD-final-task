@@ -4,11 +4,12 @@ import './bootstrap.bundle.min.js';
 function navItemActive() {
     const pagePath = window.location.pathname;
     let currentPage = pagePath.substring(
-        pagePath.indexOf('/') + 1,
+        pagePath.lastIndexOf('/') + 1,
         pagePath.lastIndexOf('.')
     )
 
-    if(currentPage === 'index') {
+    console.log(currentPage);
+    if(currentPage === 'index' || currentPage === "/dist/") {
         currentPage = 'home';
     }
 

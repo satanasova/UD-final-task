@@ -1,0 +1,6 @@
+mixin pageTitleHover(title, breadcrumbs)
+    h1= title
+    ul
+        each val in breadcrumbs
+            //- li= val.title  +'--> '+val.link
+            a(href=val.link)= val.title

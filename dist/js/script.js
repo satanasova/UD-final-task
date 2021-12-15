@@ -8,7 +8,8 @@ function navItemActive() {
         pagePath.lastIndexOf('.')
     )
 
-    if(currentPage === 'index') {
+    console.log(currentPage);
+    if(currentPage === 'index' || currentPage === "/dist/") {
         currentPage = 'home';
     }
 
