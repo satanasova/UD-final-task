@@ -1,0 +1,51 @@
+mixin contentServices() 
+    .about-content
+        h3.page-title Excellent company quality services
+        p.text-regular.my-5 Donec lacinia purus et nisl dignissim, vel egestas nunc iaculis. Maecenas elementum elementum ipsum, sit amet lacinia lectus vulputate nec.
+        button.btn.btn-primary.btn-arrow.px-5 Appointement
+
+mixin contentCompany() 
+    .about-content
+            h3.page-title 
+                span Rolso 
+                |transportation company
+            p.text-regular.my-5 Sed pulvinar ligula sapien, eget tincidunt mauris sollicitudin sed. Vivamus vel nisl diam.
+            
+            .row.achievements-row
+                each ach in achievements
+                    .col-6.achievement-col
+                        .achievement.d-flex
+                            .achievement-icon.d-flex.align-items-center.justify-content-center
+                                img(src=`../../images/svgs/${ach.icon}.svg`)
+                            .achievement-content.p-3 
+                                if ach.titleSpan 
+                                    p.achievement-title.mb-0
+                                        span= ach.titleSpan
+                                        | #{ach.title}
+                                else
+                                    p.achievement-title.mb-0= ach.title
+                                - if(ach.details.constructor == Array)
+                                    each det in ach.details 
+                                        p.text-regular.achievement-details.mb-0= det
+                                - else 
+                                    p.text-regular.achievement-details.mb-0= ach.details
+ 
+mixin sectionAbout(firstContent, achievements)
+    section.about 
+        .container-fluid.py-5 
+            .row.about-row.align-items-center 
+                .col-6.p-0 
+                    .about-photo
+                .col-4.ps-3
+                    if firstContent === 'services'
+                        +contentServices()
+                    else if firstContent === 'company'
+                        +contentCompany()
+            .row.about-row.align-items-center 
+                .col-4.p-0
+                    if firstContent === 'services'
+                        +contentCompany()
+                    else if firstContent === 'company'
+                        +contentServices
+                .col-6.p-0 
+                    .about-photo

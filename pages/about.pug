@@ -1,6 +1,7 @@
 extend template.pug
 include ../components/hero/hero
 include ../components/page-title-hover/page-title-hover
+include ../components/section-about/section-about
 
 block head 
     link(rel="stylesheet", href="./css/about.css")
@@ -13,6 +14,19 @@ block content
         {title:'Home', link: './index.html'},
         {title:'About', link: './about.html'}
     ])
-    .container 
-        //- +gallery()
-        //-     h1
+    
+    - 
+        const achievements = [
+            {
+                icon: 'address',
+                title: 'Address',
+                details: '4621 Hill Croft Farm Road'
+            },
+            {
+                icon:'phone-call',
+                title: 'Phone',
+                details: ['+8 (495) 989 20 11', '+8 (495) 969 60 12']
+            }
+        ]
+
+    +sectionAbout('company', achievements)

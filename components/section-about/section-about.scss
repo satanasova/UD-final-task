@@ -1,0 +1,59 @@
+
+.about {
+    .about-row {
+        .about-photo {
+            min-height: 53.125rem;
+        }
+    
+        &:first-child {
+            transform: translateY(5rem);
+            .about-photo {
+                background: url('../../images/cats/blue-cat-4.jpg') no-repeat center;
+                background-size: cover;
+            }
+            .about-content {
+                transform: translateY(-5rem);
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: end;
+            .about-photo {
+                // margin-top: -5rem;
+                background: url('../../images/cats/blue-cat-3.jpg') no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        .achievements-row {
+            position: relative;
+            width: 140%;
+            .achievement-col {
+                &:first-child {
+                    .achievement {
+                        &-icon {
+                            background-color: $color-primary;
+                        }
+                    }   
+                }
+                &:nth-child(2) {
+                    .achievement {
+                        &-icon {
+                            background-color: $color-secondary;
+                        }
+                    }   
+
+                }
+                .achievement {
+                    background-color: white;
+                    box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262);
+                    &-icon {
+                        min-width: 7.375rem;
+                        min-height: 7.375rem;
+                    }
+                }
+            }
+
+        }
+    }
+}

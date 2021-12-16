@@ -7863,11 +7863,17 @@ body {
         background-color: #0b0b82;
         border: 1px solid #0b0b82;
         box-sizing: content-box; }
+  body h2, body .h2, body h3, body .h3, body h4, body .h4 {
+    font-weight: 800; }
   body h1, body .h1 {
     font-size: 4.875rem;
     font-weight: 700; }
-  body h2, body .h2, body h3, body .h3, body h4, body .h4 {
-    font-weight: 800; }
+  body h2, body .h2 {
+    font-size: 3.5rem; }
+  body h3, body .h3 {
+    font-size: 3rem; }
+    body h3 span, body .h3 span {
+      color: #0F0FB1; }
   body .page-title {
     color: #19456b;
     font-weight: 800; }
