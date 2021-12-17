@@ -2,6 +2,7 @@
 // @import './base';
 @import '../components/hero/hero.scss';
 @import '../components/section-about/section-about.scss';
+@import '../components/price-cards/price-cards.scss';
 
 
 .features {
@@ -114,11 +115,6 @@
             }
         }
 
-        label {
-            font-family: $font-secondary;
-            font-size: 0.875rem; //14px
-            color: rgba(109, 109, 109, 1);
-        }
         textarea {
             resize: none;
             min-height: 9.0625rem; //145px
@@ -151,3 +147,26 @@
         padding: 3rem 3rem 3rem 2rem;
     }
 }
+
+.price-cards {
+    .price-card {
+        &.big {
+            &::before {
+                position: absolute;
+                content: 'Best Offer';
+                text-align: center;
+                display: block;
+                width: 47%;
+                padding: 0.5rem 0;
+                background: $color_highlight;
+                color: $color-title;
+                font-weight: 600;
+                font-size: 14px;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -100%);
+            }
+        }
+    }
+}
+

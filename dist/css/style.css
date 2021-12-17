@@ -7886,14 +7886,23 @@ body {
   body .page-title {
     color: #19456b;
     font-weight: 800; }
+  body .card-title {
+    font-size: 1.125rem;
+    font-weight: 500; }
+    body .card-title span {
+      font-size: 3rem;
+      font-weight: 800; }
   body .text-regular {
     font-family: "Rubik", sans-serif;
-    font-size: 1.0625rem; }
+    font-size: 1.0625rem;
+    font-weight: 400; }
+    body .text-regular.pale {
+      opacity: .8; }
   body .text-small {
     font-family: "Rubik", sans-serif;
-    font-size: 1.0625rem;
+    font-size: .875rem;
     font-weight: 400;
-    opacity: .8; }
+    color: #6d6d6d; }
 
 .header {
   z-index: 1;

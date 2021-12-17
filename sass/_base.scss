@@ -130,19 +130,33 @@ body {
     //     }
     // }
 
+    .card-title {
+        font-size: 1.125rem; //18px
+        font-weight: 500;
+            span {
+                font-size: 3rem; //48px
+                font-weight: 800;
+            }
+    }
+
     .text-regular {
         font-family: $font-secondary;
         font-size: 1.0625rem; // 17px
+        font-weight: 400;
         // opacity: .8;
+        &.pale {
+            opacity: .8;
+        }
     }
 
 
     .text-small {
         font-family: $font-secondary;
-        font-size: 1.0625rem; // 17px
+        font-size: .875rem; // 14px
         font-weight: 400;
+        color: rgba(109, 109, 109, 1);
+
         // color: rgba(225, 225, 225, 1);
-        opacity: .8;
         
     }
 }

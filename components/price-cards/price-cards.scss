@@ -1,0 +1,44 @@
+.price-cards {
+    .price-card {
+        width: 86%;
+        margin: 0 auto;
+        min-height: 32.625rem; //522px
+        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+
+        .card-title,
+        .header-save {
+            color: $color-secondary;
+        }
+
+        &-header {
+            .header-save {
+                font-size: .875rem; //14px
+                font-weight: 700;
+            }
+        }
+
+        &-content {
+            color: $color-body;
+            svg {
+                margin-right: .5rem;
+            }
+        }
+
+        &.big {
+            position: relative;
+            width: 100%;
+            .card-title,
+            .header-save {
+                color: $color-primary;
+            }
+
+            &-content {
+                p:nth-child(2) {
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+    }
+}

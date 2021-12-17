@@ -44,6 +44,30 @@
       min-width: 7.375rem;
       min-height: 7.375rem; }
 
+.price-cards .price-card {
+  width: 86%;
+  margin: 0 auto;
+  min-height: 32.625rem;
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .price-cards .price-card .card-title,
+  .price-cards .price-card .header-save {
+    color: #2e8995; }
+  .price-cards .price-card-header .header-save {
+    font-size: .875rem;
+    font-weight: 700; }
+  .price-cards .price-card-content {
+    color: #382933; }
+    .price-cards .price-card-content svg {
+      margin-right: .5rem; }
+  .price-cards .price-card.big {
+    position: relative;
+    width: 100%; }
+    .price-cards .price-card.big .card-title,
+    .price-cards .price-card.big .header-save {
+      color: #0F0FB1; }
+    .price-cards .price-card.big-content p:nth-child(2) {
+      font-weight: 600; }
+
 .features {
   position: relative;
   margin-top: -5rem; }
@@ -102,10 +126,6 @@
     color: #382933; }
   .appointment form .form-control:focus::placeholder {
     color: transparent; }
-  .appointment form label {
-    font-family: "Rubik", sans-serif;
-    font-size: 0.875rem;
-    color: #6d6d6d; }
   .appointment form textarea {
     resize: none;
     min-height: 9.0625rem; }
@@ -127,3 +147,18 @@
     bottom: 0;
     transform: translate(0%, 50%);
     padding: 3rem 3rem 3rem 2rem; }
+
+.price-cards .price-card.big::before {
+  position: absolute;
+  content: 'Best Offer';
+  text-align: center;
+  display: block;
+  width: 47%;
+  padding: 0.5rem 0;
+  background: #FFCC29;
+  color: #19456b;
+  font-weight: 600;
+  font-size: 14px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%); }
