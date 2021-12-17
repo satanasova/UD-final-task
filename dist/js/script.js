@@ -20,4 +20,9 @@ function navItemActive() {
     })
 }
 
+$('form').on('submit', e => {
+    e.preventDefault();
+    $('form').trigger('reset')
+})
+
 navItemActive()

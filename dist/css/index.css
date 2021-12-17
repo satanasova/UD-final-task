@@ -96,3 +96,21 @@
   .about .about-row .achievements-row .achievement-col:nth-child(2) .achievement-title span {
     font-size: 3rem;
     font-weight: 800; }
+
+.appointment h5 {
+  color: #19456b;
+  font-weight: 600; }
+
+.appointment form {
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .appointment form .form-control::placeholder {
+    color: #382933; }
+  .appointment form .form-control:focus::placeholder {
+    color: transparent; }
+  .appointment form label {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.875rem;
+    color: #6d6d6d; }
+  .appointment form textarea {
+    resize: none;
+    min-height: 9.0625rem; }

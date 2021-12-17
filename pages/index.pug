@@ -164,3 +164,33 @@ block content
         ]
 
     +sectionAbout('services', achievements)
+
+    section.appointment 
+        .container.p-5 
+            .row.px-5
+                .col-5.ps-5.pe-0.me-5 
+                    h2.page-title How much will i earn?
+                    p.text-regular.pt-3.pb-4 Maecenas dignissim, massa sed imperdiet fermentum, metus orci vehicula sapien, eu posuere.
+                    .call-us 
+                        h5 Call us for consultation
+                        h3
+                            span +8 (495) 989 20 11
+                .col-6 
+                    form.row.g-3.py-5.px-4(action="")
+                        .col-md-6 
+                            label.form-label(for="name") Full Name
+                            input.form-control.text-regular(type="text" id="name" placeholder="John Doe" required)
+                        .col-md-6 
+                            label.form-label(for="phone") Phone
+                            input.form-control.text-regular(type="tel" id="phone" placeholder="+1 234 456 7890")
+                        .col-md-6 
+                            label.form-label(for="email") Email
+                            input.form-control.text-regular(type="email" id="email" placeholder="JonhDoe@gmail.com" required)
+                        .col-md-6 
+                            label.form-label(for="subject") Subject
+                            input.form-control.text-regular(type="text" id="subject" placeholder="Road Freight")
+                        .col-12 
+                            label.form-label(for="message") Message
+                            textarea.form-control.text-regular(type="text" id="message" placeholder="Text")
+                        .col-12.text-end 
+                            button.btn.btn-primary.px-4.mt-4(type="submit") Appointment
