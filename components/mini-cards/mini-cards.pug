@@ -1,0 +1,29 @@
+mixin miniCardAchievement(icon, title, titleSpan titleType, details)
+    .mini-card-achievement.d-flex
+        .achievement-icon.d-flex.align-items-center.justify-content-center
+            img(src=`../../images/svgs/${icon}.svg`)
+        .achievement-content.p-3 
+                p.mb-0(class=`card-title-${titleType}`)
+                    span= titleSpan
+                    | #{title}
+
+                p.text-regular.achievement-details.mb-0= details
+
+
+
+
+
+
+
+mixin miniCardContact(icon, title, details)
+    .mini-card-contact.d-flex
+        .mini-card-icon.d-flex.align-items-center.justify-content-center
+            img(src=`../../images/svgs/${icon}.svg`)
+        .mini-card-content.p-3 
+            p.text-regular.mb-0= title
+            - if(details.constructor == Array)
+                each det in details 
+                    p.page-title.mb-0= det
+            - else 
+                p.page-title.mb-0= details
+

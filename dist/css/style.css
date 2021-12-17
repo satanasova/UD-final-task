@@ -7846,6 +7846,8 @@ body {
     body .btn-arrow {
       position: relative;
       padding: .78rem; }
+      body .btn-arrow.centered {
+        transform: translateX(-1.625rem); }
       body .btn-arrow::after {
         position: absolute;
         content: '';

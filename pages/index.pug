@@ -1,6 +1,10 @@
 extend template.pug
 include ../components/hero/hero
 include ../components/section-about/section-about
+include ../components/price-cards/price-cards
+include ../components/section-contacts/section-contacts
+include ../components/mini-cards/mini-cards
+include ../components/google-map/google-map
 
 block head 
     link(rel="stylesheet", href="./css/index.css")
@@ -218,3 +222,19 @@ block content
                             a.btn-inline(href="services.html") All Services
                                 svg(width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg")
                                     path(d="M7.33594 2.5625H0.28125C0.117188 2.5625 0 2.70312 0 2.84375V4.15625C0 4.32031 0.117188 4.4375 0.28125 4.4375H7.33594V5.53906C7.33594 6.03125 7.94531 6.28906 8.29688 5.9375L10.3125 3.89844C10.5469 3.6875 10.5469 3.33594 10.3125 3.125L8.29688 1.08594C7.94531 0.734375 7.33594 0.992188 7.33594 1.48438V2.5625Z" fill="white")
+
+    section.pricing 
+        .container.p-5 
+            .row.justify-content-center 
+                .col-lg-8.text-center 
+                    h2.page-title The right price for you, whoever you are
+                    p.text-regular.py-4 Donec varius, nisi sed cursus varius, dolor dui vehicula enim, eu porttitor lacus metus vitae nibh. Etiam efficitur lorem et lorem ultricies mollis. Sed non bibendum orci. Cras non mi sagittis, vehicula erat ut, posuere orci
+                    button.btn.btn-primary.btn-arrow.centered.px-5 Consultation     
+
+    section.map 
+        .container.p-5 
+            .row.pb-5.justify-content-center 
+                .col-lg-6.text-center 
+                    h2.page-title We provide future of delivery
+            .row    
+                +googleMap()

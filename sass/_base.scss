@@ -55,6 +55,9 @@ body {
         &-arrow {
             position: relative;
             padding: .78rem;
+            &.centered {
+                transform: translateX(-1.625rem); //26px
+            }
             &::after {
                 position: absolute;
                 content: '';
@@ -71,7 +74,7 @@ body {
                 position: absolute;
                 content: '';
                 display: block;
-                width: 3.25rem;
+                width: 3.25rem; //52px
                 height: 100%;
                 top: 0;
                 right: 0;
@@ -112,11 +115,27 @@ body {
         font-weight: 800;
     }
 
+
+    // .card-title-text {
+    //     font-size: 1.25rem; //20px
+    //     span {
+    //         font-size: 3rem; //48px
+    //         font-weight: 800;
+    //     }
+    // }
+    // .card-title-plus {
+    //     font-size: 3rem; //48px
+    //     span {
+    //         font-weight: 800;
+    //     }
+    // }
+
     .text-regular {
         font-family: $font-secondary;
         font-size: 1.0625rem; // 17px
         // opacity: .8;
     }
+
 
     .text-small {
         font-family: $font-secondary;
