@@ -1,5 +1,6 @@
 import './jquery.min.js';
 import './bootstrap.bundle.min.js';
+import './splide.min.js';
 
 function navItemActive() {
     const pagePath = window.location.pathname;
@@ -8,7 +9,6 @@ function navItemActive() {
         pagePath.lastIndexOf('.')
     )
 
-    console.log(currentPage);
     if(currentPage === 'index' || currentPage === "/dist/") {
         currentPage = 'home';
     }
@@ -22,7 +22,26 @@ function navItemActive() {
 
 $('form').on('submit', e => {
     e.preventDefault();
-    $('form').trigger('reset')
+    $('form').trigger('reset');
+})
+
+const splide = new Splide('.splide', {
+    autoplay: true,
+    type: 'loop',
+    focus: 'center',
+    autoWidth: true
+}).mount();
+
+splide.on('moved', function(){
+    const activeSlide = $('.splide__slide.is-visible');
+    const activeTitle = $(activeSlide).attr('data-title');
+    const activeText = $(activeSlide).attr('data-text');
+    const labelTitle = $('.splide-label').find('h5');
+    const labelText = $('.splide-label').find('p');
+
+    labelTitle.text(activeTitle);
+    labelText.text(activeText);
+    
 })
 
 navItemActive()

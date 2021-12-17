@@ -7838,6 +7838,11 @@ body {
       body .btn-primary:hover {
         background-color: #0b0b82;
         border-color: #0b0b82; }
+    body .btn-inline {
+      font-size: .75rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: inherit; }
     body .btn-arrow {
       position: relative;
       padding: .78rem; }
@@ -7874,6 +7879,8 @@ body {
     font-size: 3rem; }
     body h3 span, body .h3 span {
       color: #0F0FB1; }
+  body h5, body .h5 {
+    font-weight: 800; }
   body .page-title {
     color: #19456b;
     font-weight: 800; }
@@ -7884,7 +7891,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 1.0625rem;
     font-weight: 400;
-    color: #e1e1e1; }
+    opacity: .8; }
 
 .header {
   z-index: 1;
@@ -7969,9 +7976,5 @@ body {
     background-color: rgba(255, 255, 255, 0.1); }
   .footer-bottom .footer-contacts:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.2); }
-  .footer-bottom .footer-contacts .contact-title {
-    font-size: 1.0625rem;
-    font-family: "Rubik", sans-serif;
-    color: #e1e1e1; }
   .footer-bottom .footer-contacts .contact-details {
     font-size: 1.125rem; }

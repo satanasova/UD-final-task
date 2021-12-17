@@ -55,17 +55,12 @@
     background: linear-gradient(129.28deg, #00008E -89.49%, #017280 111.5%);
     box-shadow: 10px 10px 30px rgba(0, 0, 142, 0.203811); }
     .features .services-box ul li {
-      color: #e1e1e1;
       margin-bottom: 1rem;
       transition: all .3s ease-in-out; }
-      .features .services-box ul li:last-child {
-        margin-top: 3rem;
-        font-size: .75rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: inherit; }
-      .features .services-box ul li:not(:last-child):hover {
-        transform: scale(1.2); }
+      .features .services-box ul li:not(:last-child) {
+        color: #e1e1e1; }
+        .features .services-box ul li:not(:last-child):hover {
+          transform: scale(1.2); }
 
 .services .images-row figure {
   transition: all .3s ease-in-out;
@@ -114,3 +109,21 @@
   .appointment form textarea {
     resize: none;
     min-height: 9.0625rem; }
+
+.projects {
+  padding-bottom: 15rem; }
+  .projects img {
+    min-width: 780px; }
+  .projects .splide__arrows {
+    display: none; }
+  .projects .splide__pagination {
+    display: none; }
+  .projects .splide-label {
+    background-color: #00008E;
+    color: white;
+    max-width: 18.75rem;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    transform: translate(0%, 50%);
+    padding: 3rem 3rem 3rem 2rem; }
