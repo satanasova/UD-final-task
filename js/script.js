@@ -25,23 +25,32 @@ $('form').on('submit', e => {
     $('form').trigger('reset');
 })
 
-const splide = new Splide('.splide', {
-    autoplay: true,
-    type: 'loop',
-    focus: 'center',
-    autoWidth: true
-}).mount();
+function splideHandler() {
+    if($('.splide').length > 0) {
+        const splide = new Splide('.splide', {
+            autoplay: true,
+            type: 'loop',
+            focus: 'center',
+            autoWidth: true
+        }).mount();
+        
+        splide.on('moved', function(){
+            const activeSlide = $('.splide__slide.is-visible');
+            const activeTitle = $(activeSlide).attr('data-title');
+            const activeText = $(activeSlide).attr('data-text');
+            const labelTitle = $('.splide-label').find('h5');
+            const labelText = $('.splide-label').find('p');
+        
+            labelTitle.text(activeTitle);
+            labelText.text(activeText);
+            
+        })
+    } else {
+        return;
+    }
+}
 
-splide.on('moved', function(){
-    const activeSlide = $('.splide__slide.is-visible');
-    const activeTitle = $(activeSlide).attr('data-title');
-    const activeText = $(activeSlide).attr('data-text');
-    const labelTitle = $('.splide-label').find('h5');
-    const labelText = $('.splide-label').find('p');
 
-    labelTitle.text(activeTitle);
-    labelText.text(activeText);
-    
-})
 
-navItemActive()
+navItemActive();
+splideHandler();

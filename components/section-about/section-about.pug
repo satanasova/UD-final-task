@@ -36,13 +36,13 @@ mixin sectionAbout(firstContent, achievements)
             .row.about-row.align-items-center 
                 .col-6.p-0 
                     .about-photo
-                .col-4.ps-3
+                .col-6.col-xxl-4.ps-3
                     if firstContent === 'services'
                         +contentServices()
                     else if firstContent === 'company'
                         +contentCompany()
             .row.about-row.align-items-center 
-                .col-4.p-0
+                .col-6.col-xxl-4.p-0
                     if firstContent === 'services'
                         +contentCompany()
                     else if firstContent === 'company'

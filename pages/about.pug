@@ -10,11 +10,46 @@ block head
 block content
     +hero()
 
-    +pageTitleHover('About', [
+    +pageTitleHover('About Us', [
         {title:'Home', link: './index.html'},
         {title:'About', link: './about.html'}
     ])
     
+    section.steps 
+        .container.px-5 
+            .row.title-row.justify-content-center 
+                .col-12.text-center 
+                    h2.page-title Steps of
+                        br
+                        |cooperation
+                    p.text-regular.py-4 Phasellus commodo felis felis, quis blandit metus rutrum sit amet. Pellentesque  
+                        br
+                        |odio augue, pellentesque sed ligula at, lobortis
+            .row.steps-row 
+                .col-4
+                    .step.text-center 
+                        .step-icon.d-flex.justify-content-center.align-items-center.m-auto
+                            img.img-fluid(src="../images/svgs/calendar.svg")
+                            .step-icon-num.d-flex.justify-content-center.align-items-center 01 
+                        p.page-title.pt-3 Thinking strategy 
+                        p.text-regular Curabitur porttitor viverra mi, a viverra risus sagittis at. Nulla rhoncus quis velit id varius. Aenean euism
+                .col-4
+                    .step.text-center.primary.mt-5 
+                        .step-icon.d-flex.justify-content-center.align-items-center.m-auto
+                            img.img-fluid(src="../images/svgs/hourglass.svg")
+                            .step-icon-num.d-flex.justify-content-center.align-items-center 02 
+                        p.page-title.pt-3 Choice of solutions
+                        p.text-regular Aliquam eu ultrices risus. Sed interdum lacinia sem, sed euismod purus rhoncus a. Sed tempor, neque
+                .col-4
+                    .step.text-center 
+                        .step-icon.d-flex.justify-content-center.align-items-center.m-auto
+                            img.img-fluid(src="../images/svgs/package-location.svg")
+                            .step-icon-num.d-flex.justify-content-center.align-items-center 03 
+                        p.page-title.pt-3 Route building 
+                        p.text-regular Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+
+
+
     - 
         const achievements = [
             {
@@ -28,5 +63,4 @@ block content
                 details: ['+8 (495) 989 20 11', '+8 (495) 969 60 12']
             }
         ]
-
     +sectionAbout('company', achievements)

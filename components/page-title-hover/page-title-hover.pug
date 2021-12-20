@@ -1,6 +1,11 @@
 mixin pageTitleHover(title, breadcrumbs)
-    h1= title
-    ul
-        each val in breadcrumbs
-            //- li= val.title  +'--> '+val.link
-            a(href=val.link)= val.title
+    section.page-title-hover
+        .container.bg-white
+            .row.py-5
+                .col-12
+                    h1.page-title.text-center= title
+                    ol.breadcrumb.justify-content-center
+                        each val in breadcrumbs
+                            //- li= val.title  +'--> '+val.link
+                            li.breadcrumb-item
+                                a(href=val.link)= val.title

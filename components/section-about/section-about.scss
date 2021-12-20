@@ -26,8 +26,8 @@
         }
 
         .achievements-row {
-            position: relative;
-            width: 140%;
+            position: absolute;
+            // width: 150%;
             .achievement-col {
                 &:first-child {
                     .achievement {
@@ -47,8 +47,9 @@
                 .achievement {
                     background-color: white;
                     box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262);
+                    min-width: 22.5rem; //360px
                     &-icon {
-                        min-width: 7.375rem;
+                        min-width: 7.375rem; //122px
                         min-height: 7.375rem;
                     }
                 }

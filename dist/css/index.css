@@ -31,15 +31,15 @@
     background-size: cover; }
 
 .about .about-row .achievements-row {
-  position: relative;
-  width: 140%; }
+  position: absolute; }
   .about .about-row .achievements-row .achievement-col:first-child .achievement-icon {
     background-color: #0F0FB1; }
   .about .about-row .achievements-row .achievement-col:nth-child(2) .achievement-icon {
     background-color: #2e8995; }
   .about .about-row .achievements-row .achievement-col .achievement {
     background-color: white;
-    box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+    box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262);
+    min-width: 22.5rem; }
     .about .about-row .achievements-row .achievement-col .achievement-icon {
       min-width: 7.375rem;
       min-height: 7.375rem; }
