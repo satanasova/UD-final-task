@@ -2,6 +2,8 @@ extend template.pug
 include ../components/hero/hero
 include ../components/page-title-hover/page-title-hover
 include ../components/section-about/section-about
+include ../components/google-map/google-map
+include ../components/mini-card/mini-card
 
 block head 
     link(rel="stylesheet", href="./css/about.css")
@@ -108,3 +110,19 @@ block content
                         .col-4 
                             +progressBar('90', 'Support 24/7')
 
+    section.section-contacts 
+        .container.p-5 
+            .row.pb-5.justify-content-center 
+                .col-lg-6.text-center 
+                    h2.page-title We provide future 
+                        br
+                        |of delivery
+            .row 
+                .col-4
+                    +miniCard('phone-call','secondary','Phones',['+8 (495) 989 20 11', '+8 (495) 969 60 12']) 
+                .col-4 
+                    +miniCard('address','primary','Address',['4621 Hill Croft Farm', 'Road']) 
+                .col-4 
+                    +miniCard('mail','secondary','Emails',['rolso@site.com', 'rolso@support.com']) 
+            .row    
+                +googleMap()

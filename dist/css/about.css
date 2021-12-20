@@ -51,6 +51,16 @@
       min-width: 7.375rem;
       min-height: 7.375rem; }
 
+.mini-card {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .mini-card-icon {
+    min-width: 7.375rem;
+    min-height: 7.375rem; }
+    .mini-card-icon.primary {
+      background-color: #0F0FB1; }
+    .mini-card-icon.secondary {
+      background-color: #2e8995; }
+
 .steps-row .step {
   font-size: 1.75rem; }
   .steps-row .step-icon {

@@ -1,0 +1,12 @@
+mixin miniCard(icon, bgColor, title, details)
+    .mini-card.d-flex.mb-5
+        .mini-card-icon.d-flex.align-items-center.justify-content-center(class= bgColor)
+            img(src=`./images/svgs/${icon}.svg`)
+        .mini-card-content.p-3 
+            p.text-regular.mb-0= title
+            - if(details.constructor == Array)
+                each det in details 
+                    p.page-title.mb-0= det
+            - else 
+                p.page-title.mb-0= details
+
