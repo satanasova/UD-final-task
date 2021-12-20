@@ -19,7 +19,7 @@
 .about .about-row:first-child {
   transform: translateY(5rem); }
   .about .about-row:first-child .about-photo {
-    background: url("../../images/cats/blue-cat-4.jpg") no-repeat center;
+    background: url("../images/cats/blue-cat-4.jpg") no-repeat center;
     background-size: cover; }
   .about .about-row:first-child .about-content {
     transform: translateY(-5rem); }
@@ -27,7 +27,7 @@
 .about .about-row:nth-child(2) {
   justify-content: end; }
   .about .about-row:nth-child(2) .about-photo {
-    background: url("../../images/cats/blue-cat-3.jpg") no-repeat center;
+    background: url("../images/cats/blue-cat-3.jpg") no-repeat center;
     background-size: cover; }
 
 .about .about-row .achievements-row {

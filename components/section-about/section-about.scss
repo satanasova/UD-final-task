@@ -8,7 +8,7 @@
         &:first-child {
             transform: translateY(5rem);
             .about-photo {
-                background: url('../../images/cats/blue-cat-4.jpg') no-repeat center;
+                background: url('../images/cats/blue-cat-4.jpg') no-repeat center;
                 background-size: cover;
             }
             .about-content {
@@ -20,7 +20,7 @@
             justify-content: end;
             .about-photo {
                 // margin-top: -5rem;
-                background: url('../../images/cats/blue-cat-3.jpg') no-repeat center;
+                background: url('../images/cats/blue-cat-3.jpg') no-repeat center;
                 background-size: cover;
             }
         }
