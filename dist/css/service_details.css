@@ -1,0 +1,66 @@
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.8) 0%, rgba(1, 114, 128, 0.8) 100%);
+  padding: 12.5rem 0 18.75rem 0;
+  position: relative; }
+  .hero .watermark {
+    position: absolute;
+    color: #FFFFFF30;
+    bottom: 17%;
+    left: 54%;
+    font-size: 350px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 350px;
+    user-select: none; }
+
+.page-title-hover {
+  position: relative;
+  transform: translateY(-50%); }
+  .page-title-hover .container {
+    box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+    width: 60%; }
+
+.price-cards .price-card {
+  width: 86%;
+  margin: 0 auto;
+  min-height: 32.625rem;
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .price-cards .price-card .card-title,
+  .price-cards .price-card .header-save {
+    color: #2e8995; }
+  .price-cards .price-card-header .header-save {
+    font-size: .875rem;
+    font-weight: 700; }
+  .price-cards .price-card-content {
+    color: #382933; }
+    .price-cards .price-card-content svg {
+      margin-right: .5rem; }
+  .price-cards .price-card.big {
+    position: relative;
+    width: 100%; }
+    .price-cards .price-card.big .card-title,
+    .price-cards .price-card.big .header-save {
+      color: #0F0FB1; }
+    .price-cards .price-card.big .price-card-content p:nth-child(2) {
+      font-weight: 600; }
+
+.box-title {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .box-title .icon {
+    min-width: 4rem;
+    min-height: 4rem; }
+    .box-title .icon.primary {
+      background-color: #00008E; }
+    .box-title .icon.secondary {
+      background-color: #2e8995; }
+
+.single-service-details .main-details .check-list h5 {
+  font-size: 1.375rem; }
+
+.single-service-details .main-details .check-list img {
+  margin-right: .5rem; }
+
+.single-service-details .main-details .truck-card p {
+  color: #00008E;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500; }

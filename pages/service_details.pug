@@ -1,0 +1,109 @@
+extend template.pug
+include ../components/hero/hero
+include ../components/page-title-hover/page-title-hover
+include ../components/price-cards/price-cards
+include ../components/box-title/box-title
+
+
+block head 
+    link(rel="stylesheet", href="./css/service_details.css")
+    title Service Details
+
+block content
+    +hero()
+
+
+    +pageTitleHover('Shipping Freight', [
+        {title:'Home', link: './index.html'},
+        {title:'Services', link: './services.html'},
+        {title:'Shipping Freight', link: './service_details.html'}
+    ])
+
+
+
+    section.single-service-details
+        .container.px-5.pb-5 
+            .row.gx-5 
+                .col-8
+                    .main-details
+                        .gallery.mb-5
+                            .row.gy-4 
+                                .col-12 
+                                    img.img-fluid.w-100(src="./images/cats/blue-cat-1.jpg", alt="", srcset="")
+                                .col-3 
+                                    img.img-fluid.w-100(src="./images/cats/blue-cat-2.jpg", alt="", srcset="")
+                                .col-3 
+                                    img.img-fluid.w-100(src="./images/cats/blue-cat-3.jpg", alt="", srcset="")
+                                .col-3 
+                                    img.img-fluid.w-100(src="./images/cats/blue-cat-4.jpg", alt="", srcset="")
+                                .col-3 
+                                    img.img-fluid.w-100(src="./images/cats/blue-cat-1.jpg", alt="", srcset="")
+
+                        .content.text-regular.mb-5
+                            p Phasellus ac venenatis magna. Aliquam vitae blandit mauris. Quisque at ornare augue. Sed ac massa mattis, rhoncus nisl at, porttitor libero. Donec lorem enim, hendrerit nec bibendum id, placerat mattis tortor. Donec nec iaculis diam. Pellentesque vitae purus vulputate, congue lectus nec, commodo nisi.
+                            p Proin viverra, diam bibendum fermentum tempus, mi nunc ornare erat, a convallis dolor augue eu lectus. Vivamus tempor velit id mattis sagittis. Quisque porta purus et odio aliquet, at tincidunt dolor blandit. Quisque ut nibh enim. Pellentesque id ultrices libero, vitae gravida libero. Vivamus facilisis sagittis metus. Nullam molestie ex ac dui elementum blandit. Integer vitae venenatis orci. Morbi sollicitudin dictum massa, eu sodales mauris egestas id.
+                            p Sed suscipit, mi vel sodales pharetra, enim dolor lacinia tellus, vel mollis felis mauris et lorem. Cras convallis enim at hendrerit pharetra. Mauris nec tincidunt tortor, tincidunt elementum orci. Morbi at facilisis turpis. Donec pulvinar quam sed libero vehicula posuere.
+                            .row 
+                                mixin checkCircleList(title,color)
+                                    .check-list.py-3
+                                        h5.page-title.pb-3= title 
+                                        p.d-flex.align-items-center 
+                                            img(src=`./images/svgs/check-circle-${color}.svg`)
+                                            |Ut rutrum enim quis feugiat maxi
+                                        p.d-flex.align-items-center 
+                                            img(src=`./images/svgs/check-circle-${color}.svg`)
+                                            |Cras nibh massa, tincidunt dignissim pell
+                                        p.d-flex.align-items-center 
+                                            img(src=`./images/svgs/check-circle-${color}.svg`)
+                                            |Aliquam volutpat nulla in
+                                .col-6 
+                                    +checkCircleList('Industries served', 'primary')
+                                .col-6 
+                                    +checkCircleList('Servicec offered', 'secondary')
+                            p Duis imperdiet tristique elit, ut viverra sem condimentum sed. Donec et elit ut massa posuere fringilla quis in urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla odio id mauris pharetra dictum. In tincidunt ex urna, id pretium nulla pretium sed. Integer eu orci mollis, aliquet felis eu, tempor orci. Cras accumsan vel diam tempus sodales. Phasellus cursus tincidunt sapien, sit amet ultricies massa mollis id.
+                            p Cras nibh massa, tincidunt dignissim pellentesque non, ullamcorper sit amet nulla. Aenean magna nisl, dignissim a ligula id, bibendum congue nulla. Sed lobortis tempor commodo.
+                        .trucks
+                            h3.page-title.pb-3 Trucks 
+                            .row 
+                                mixin truckCard(imgName)
+                                    .truck-card
+                                        img.img-fluid.w-100(src=`./images/cats/${imgName}.jpg`)
+                                        h4.page-title.pt-3 Cascadia Evolution
+                                        p 72 full-size condo
+                                .col-6 
+                                    +truckCard('blue-cat-1')
+                                .col-6 
+                                    +truckCard('blue-cat-3')
+
+                .col-4
+                    .aside-details
+                        .other-services 
+                            +boxTitle('Other Services', 'folder-open', 'primary')
+                            .other-services-content.p-3
+                                p.text-regular Road Freight
+                                p.text-regular Train Freight
+                                p.text-regular Air Freight
+                        .contacts
+                            +boxTitle('Contacts', 'map-marker-check', 'secondary')
+                            .contact-content.p-3
+                                p.text-regular.mb-0 Adrress 
+                                p.page-title 4621 Hill Croft Farm Road
+                                p.text-regular.mb-0 Phone 
+                                p.page-title +8 (495) 989 20 11
+
+
+
+    section.pricing 
+        .container.p-5 
+            .row.justify-content-center 
+                .col-12.text-center 
+                    h2.page-title The right price for you, 
+                        br
+                        |whoever you are
+                    p.text-regular.py-4 Vestibulum tellus orci, pharetra non risus vitae, varius pellentesque magna. Integer sed sapien magna.
+                        br
+                        |Nulla neque diam, auctor eu dolor sed, rutrum euismod felis
+            .row
+                .col-12
+                    +priceCards()   
+

@@ -65,7 +65,7 @@
     .price-cards .price-card.big .card-title,
     .price-cards .price-card.big .header-save {
       color: #0F0FB1; }
-    .price-cards .price-card.big-content p:nth-child(2) {
+    .price-cards .price-card.big .price-card-content p:nth-child(2) {
       font-weight: 600; }
 
 .features {
