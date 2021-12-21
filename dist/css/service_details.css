@@ -30,7 +30,10 @@
     color: #2e8995; }
   .price-cards .price-card-header .header-save {
     font-size: .875rem;
-    font-weight: 700; }
+    font-weight: 700;
+    align-self: center; }
+  .price-cards .price-card-header .header-title {
+    font-size: 1.3475rem; }
   .price-cards .price-card-content {
     color: #382933; }
     .price-cards .price-card-content svg {
