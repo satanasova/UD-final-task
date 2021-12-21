@@ -1,10 +1,66 @@
 extend template.pug
 include ../components/hero/hero
+include ../components/page-title-hover/page-title-hover
+include ../components/img-caption-card/img-caption-card
 
 block head 
     link(rel="stylesheet", href="./css/services.css")
+    link(rel="stylesheet", href="./css/splide.min.css")
     title Services
 
 block content
     +hero()
-        h1 Services
+
+    +pageTitleHover('Services', [
+        {title:'Home', link: './index.html'},
+        {title:'Services', link: './services.html'}
+    ])
+
+    section.freights 
+        .container.p-5 
+            .splide(data-idx="services")     
+                .splide__track 
+                    ul.splide__list 
+                        li.splide__slide.mb-5
+                            .row 
+                                +imgCaptionCard('shipping')
+                                +imgCaptionCard('road')
+                                +imgCaptionCard('train')
+                            .row 
+                                +imgCaptionCard('air')
+                                +imgCaptionCard('shipping')
+                                +imgCaptionCard('shipping')
+                        li.splide__slide.mb-5
+                            .row 
+                                +imgCaptionCard('air')
+                                +imgCaptionCard('train')
+                                +imgCaptionCard('shipping')
+                            .row 
+                                +imgCaptionCard('road')
+                                +imgCaptionCard('shipping')
+                                +imgCaptionCard('air')
+                        li.splide__slide.mb-5
+                            .row 
+                                +imgCaptionCard('road')
+                                +imgCaptionCard('train')
+                                +imgCaptionCard('shipping')
+                            .row 
+                                +imgCaptionCard('train')
+                                +imgCaptionCard('air')
+                                +imgCaptionCard('road')
+                        li.splide__slide.mb-5
+                            .row 
+                                +imgCaptionCard('train')
+                                +imgCaptionCard('shipping')
+                                +imgCaptionCard('air')
+                            .row 
+                                +imgCaptionCard('air')
+                                +imgCaptionCard('road')
+                                +imgCaptionCard('shipping')
+
+                .splide__arrows 
+                    button.splide__arrow.splide__arrow--prev 
+                        img(src="./images/svgs/angle-double-left.svg")
+                    button.splide__arrow.splide__arrow--next 
+                        img(src="./images/svgs/angle-double-right.svg")
+

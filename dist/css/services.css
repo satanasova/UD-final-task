@@ -13,5 +13,41 @@
     line-height: 350px;
     user-select: none; }
 
-.services {
-  font-size: 30px; }
+.page-title-hover {
+  position: relative;
+  transform: translateY(-50%); }
+  .page-title-hover .container {
+    box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+    width: 60%; }
+
+.img-caption-card figure {
+  position: relative; }
+  .img-caption-card figure figcaption {
+    background-color: #0F0FB1;
+    min-width: 4.375rem;
+    min-height: 4.375rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.freights .splide {
+  height: fit-content; }
+  .freights .splide .splide__arrows .splide__arrow {
+    background-color: transparent;
+    top: unset;
+    bottom: .5rem;
+    transform: unset;
+    opacity: 1; }
+    .freights .splide .splide__arrows .splide__arrow--prev {
+      left: 40%; }
+    .freights .splide .splide__arrows .splide__arrow--next {
+      right: 40%; }
+  .freights .splide .splide__pagination--custom li button.splide__pagination__page {
+    font-family: "Rubik", sans-serif;
+    background-color: transparent;
+    opacity: 1;
+    width: 1.875rem;
+    height: 1.875rem; }
+    .freights .splide .splide__pagination--custom li button.splide__pagination__page.is-active {
+      color: white;
+      background: linear-gradient(135deg, #00008E 0%, #017280 100%); }

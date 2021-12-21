@@ -2,6 +2,7 @@ import './jquery.min.js';
 import './bootstrap.bundle.min.js';
 import './splide.min.js';
 
+
 function navItemActive() {
     const pagePath = window.location.pathname;
     let currentPage = pagePath.substring(
@@ -26,16 +27,15 @@ $('form').on('submit', e => {
 })
 
 function splideHandler() {
-    if($('.splide').length > 0) {
-        console.log($('.splide'));
-        const splide = new Splide('.splide', {
+    if($('.splide[data-idx="projects"]').length > 0) {
+        const splideProjects = new Splide('.splide[data-idx="projects"]', {
             autoplay: true,
             type: 'loop',
             focus: 'center',
             autoWidth: true
         }).mount();
         
-        splide.on('moved', function(){
+        splideProjects.on('moved', function(){
             const activeSlide = $('.splide__slide.is-visible');
             const activeTitle = $(activeSlide).attr('data-title');
             const activeText = $(activeSlide).attr('data-text');
@@ -46,8 +46,22 @@ function splideHandler() {
             labelText.text(activeText);
             
         })
+    } else if($('.splide[data-idx="services"]').length > 0){
+        const splideServices = new Splide('.splide[data-idx="services"]', {
+            autoplay: true,
+            type: 'loop'
+        });
+
+        splideServices.on('pagination:mounted', data => {
+            data.list.classList.add('splide__pagination--custom');
+          
+            data.items.forEach(item => {
+                item.button.textContent = `${item.page + 1}`;
+            });
+        });
+
+        splideServices.mount();
     } else {
-        console.log('no splide');
         return;
     }
 }

@@ -61,29 +61,28 @@
     .mini-card-icon.secondary {
       background-color: #2e8995; }
 
-.steps-row .step {
-  font-size: 1.75rem; }
-  .steps-row .step-icon {
-    position: relative;
-    width: 12.8125rem;
-    height: 12.8125rem;
-    border-radius: 50%;
-    box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
-    .steps-row .step-icon-num {
-      width: 3.125rem;
-      height: 3.125rem;
-      font-size: 1.375rem;
-      font-weight: 800;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #00008E;
-      color: white;
-      border-radius: 50%; }
-  .steps-row .step.primary {
-    margin-top: 3rem; }
-    .steps-row .step.primary .step-icon-num {
-      background-color: #2e8995; }
+.steps-row .step-icon {
+  position: relative;
+  width: 12.8125rem;
+  height: 12.8125rem;
+  border-radius: 50%;
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .steps-row .step-icon-num {
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.375rem;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00008E;
+    color: white;
+    border-radius: 50%; }
+
+.steps-row .step.primary {
+  margin-top: 3rem; }
+  .steps-row .step.primary .step-icon-num {
+    background-color: #2e8995; }
 
 .about-small svg {
   margin-right: .5rem; }

@@ -1,7 +1,43 @@
+@import './variables';
 @import '../components/hero/hero.scss';
+@import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/img-caption-card/img-caption-card.scss';
 
+.freights {
+    .splide {
+        height: fit-content;
 
+        .splide__arrows {
+            .splide__arrow {
+                background-color: transparent;
+                top: unset;
+                bottom: .5rem;
+                transform: unset;
+                opacity: 1;
+                &--prev{
+                    left: 40%;
+                }
 
-.services {
-    font-size: 30px
+                &--next{
+                    right: 40%;
+                }
+            }
+        }
+        
+        .splide__pagination--custom {
+            li {
+                button.splide__pagination__page {
+                    font-family: $font-secondary;
+                    background-color: transparent;
+                    opacity: 1;
+                    width: 1.875rem; //30px
+                    height: 1.875rem; //30px
+                    &.is-active {
+                        color: white;
+                        background: linear-gradient(135deg, #00008E 0%, #017280 100%);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,9 @@
+mixin imgCaptionCard(type)
+    .col-4
+        .img-caption-card.pb-5
+            figure.mb-4
+                img.img-fluid(src=`./images/cats/${type}.jpeg`)
+                figcaption.d-flex.justify-content-center.align-items-center 
+                    img.img-fluid(src=`./images/svgs/${type}.svg`)
+            h4.page-title= `${type} Freight`
+            p.text-regular Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent
