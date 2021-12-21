@@ -15,3 +15,34 @@ block content
         {title:'Services', link: './services.html'},
         {title:'Projects', link: './projects.html'}
     ])
+
+    section.sort 
+        .container.px-5.pb-5 
+            .row.pb-4    
+                .col-12 
+                    .sort-btns.d-flex.justify-content-center 
+                        button.btn.mx-4(data-idx="all") All
+                        button.btn.mx-4(data-idx="road") Road
+                        button.btn.mx-4(data-idx="shipping") Shipping
+                        button.btn.mx-4(data-idx="air") Air
+                        button.btn.mx-4(data-idx="train") Train
+            .row 
+                .col-12 
+                    .row.gy-4.sort-content
+                        .col-5.sort-item
+                            .road
+                        .col-3.sort-item
+                            .shipping
+                        .col-4.sort-item
+                            .air
+                        .col-6.sort-item
+                            .shipping
+                        .col-3.sort-item
+                            .air
+                        .col-3.sort-item
+                            .train
+            .row.py-5
+                .col-12.text-center 
+                    button.btn.btn-primary.btn-arrow.px-5 Appointment
+
+                    

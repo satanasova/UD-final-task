@@ -1,3 +1,36 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/page-title-hover/page-title-hover.scss';
+
+.sort {
+    &-btns {
+        button {
+            color: $color_title;
+            font-weight: 600;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    &-content {
+        .sort-item {
+            &>div {
+                width: 100%;
+                min-height: 405px;
+            }
+            .road {
+                background: url('../images/cats/road.jpeg') center;
+            }
+            .air {
+                background: url('../images/cats/air.jpeg') center;
+            }
+            .train {
+                background: url('../images/cats/train.jpeg') center;
+            }
+            .shipping {
+                background: url('../images/cats/shipping.jpeg') center;
+            }
+        }
+    
+    }
+}

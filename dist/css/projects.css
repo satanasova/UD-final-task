@@ -19,3 +19,25 @@
   .page-title-hover .container {
     box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
     width: 60%; }
+
+.sort-btns button {
+  color: #19456b;
+  font-weight: 600; }
+  .sort-btns button:focus {
+    box-shadow: none; }
+
+.sort-content .sort-item > div {
+  width: 100%;
+  min-height: 405px; }
+
+.sort-content .sort-item .road {
+  background: url("../images/cats/road.jpeg") center; }
+
+.sort-content .sort-item .air {
+  background: url("../images/cats/air.jpeg") center; }
+
+.sort-content .sort-item .train {
+  background: url("../images/cats/train.jpeg") center; }
+
+.sort-content .sort-item .shipping {
+  background: url("../images/cats/shipping.jpeg") center; }

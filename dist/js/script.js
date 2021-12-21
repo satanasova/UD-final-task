@@ -66,7 +66,31 @@ function splideHandler() {
     }
 }
 
+function sort() {
+    if($('.sort')) {
+        const sortItems = $('.sort-item').clone()
+
+        $('.sort-btns').on('click', function(e) {
+            const target = e.target
+
+            if($(target).hasClass('btn')) {
+                $('.sort-content').empty()
+                const sortCondition = $(target).attr('data-idx');
+                console.log(sortItems);
+                const sorted = sortItems.filter((idx,item) => {
+                    return $(item).find(`.${sortCondition}`).length > 0;
+                }) 
+                console.log(sorted);
+                const itemsToAppend = sorted.length>0 ? sorted : sortItems
+                itemsToAppend.appendTo('.sort-content')
+            } 
+        })
+    } else {
+        return;
+    }
+}
 
 
 navItemActive();
 splideHandler();
+sort();
