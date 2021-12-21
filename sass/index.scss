@@ -102,30 +102,13 @@
 
     form {
         box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
-
-        .form-control {
-            &::placeholder {
-                color: $color-body;
-            }
-
-            &:focus {
-                &::placeholder {
-                    color: transparent;
-                }
-            }
-        }
-
-        textarea {
-            resize: none;
-            min-height: 9.0625rem; //145px
-        }
     }
 }
 
 .projects {
     padding-bottom: 10rem;
     img {
-        min-width: 780px;
+        min-width: 48.75rem; //780px
     }
 
     .splide__arrows {

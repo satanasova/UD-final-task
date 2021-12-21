@@ -1,0 +1,20 @@
+extend template.pug
+include ../components/hero/hero
+include ../components/page-title-hover/page-title-hover
+
+block head 
+    link(rel="stylesheet", href="./css/blog.css")
+    title Blog
+
+block content
+    +hero()
+
+
+    +pageTitleHover('Blog', [
+        {title:'Home', link: './index.html'},
+        {title:'About', link: './about.html'},
+        {title:'Blog', link: './blog.html'}
+    ])
+
+
+    

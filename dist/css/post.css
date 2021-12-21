@@ -1,0 +1,14 @@
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.8) 0%, rgba(1, 114, 128, 0.8) 100%);
+  padding: 12.5rem 0 18.75rem 0;
+  position: relative; }
+  .hero .watermark {
+    position: absolute;
+    color: #FFFFFF30;
+    bottom: 17%;
+    left: 54%;
+    font-size: 350px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 350px;
+    user-select: none; }

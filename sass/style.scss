@@ -154,3 +154,27 @@
         }
     }
 }
+
+form {
+    .form-control,
+    .form-select,
+    .form-check-input {
+        border-radius: 0 !important;
+    }
+    .form-control {
+        &::placeholder {
+            color: $color-body;
+        }
+
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    textarea {
+        resize: none;
+        min-height: 9.0625rem; //145px
+    }
+}

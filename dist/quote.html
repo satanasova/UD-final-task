@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <script type="module" src="./js/script.js"> </script>
+    <link rel="stylesheet" href="./css/quote.css"/>
+    <title>Quote</title>
   </head>
   <body> 
     <header class="header position-absolute start-0 end-0 text-white">
@@ -52,6 +54,135 @@
         </div>
       </div>
     </header>
+    <section class="hero text-white overflow-hidden">
+    </section>
+    <section class="page-title-hover">
+      <div class="container bg-white">
+        <div class="row py-5">
+          <div class="col-12">
+            <h1 class="page-title text-center">Quote</h1>
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="./about.html">About</a></li>
+              <li class="breadcrumb-item"><a href="./quote.html">Quote</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="appointment"> 
+      <div class="container px-5"> 
+        <div class="row justify-content-center">
+          <div class="col-md-9 p-0">
+            <form action="">
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <label class="form-label text-small" for="name">Full Name</label>
+                  <input class="form-control text-regular" type="text" id="name" placeholder="John Doe" required="required"/>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label text-small" for="email">Email</label>
+                  <input class="form-control text-regular" type="email" id="email" placeholder="JonhDoe@gmail.com" required="required"/>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label text-small" for="phone">Phone</label>
+                  <input class="form-control text-regular" type="tel" id="phone" placeholder="+1 234 456 7890"/>
+                </div>
+              </div>
+              <div class="row g-3 mb-4">
+                <div class="col-md-4"> 
+                  <label class="form-label text-small" for="subject">Subject</label>
+                  <input class="form-control text-regular" type="text" id="subject" placeholder="Road Freight"/>
+                </div>
+                <div class="col-md-4"> 
+                  <label class="form-label text-small" for="delivery-city">Delivery City</label>
+                  <input class="form-control text-regular" type="text" id="delivery-city" placeholder="New York"/>
+                </div>
+                <div class="col-md-4"> 
+                  <label class="form-label text-small" for="departure-city">City of Departure</label>
+                  <input class="form-control text-regular" type="text" id="departure-city" placeholder="Las Vegas"/>
+                </div>
+              </div>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label text-small" for="type">Freight Type</label>
+                  <select class="form-select">
+                    <option class="selected" value="1">Value 1</option>
+                    <option value="2">Value 2</option>
+                    <option value="3">Value 3</option>
+                    <option value="4">Value 4</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-small" for="departure-city">Incoterms</label>
+                  <select class="form-select">
+                    <option class="selected" value="1">Value 1</option>
+                    <option value="2">Value 2</option>
+                    <option value="3">Value 3</option>
+                    <option value="4">Value 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                  <label class="form-label text-small" for="weight">Weight</label>
+                  <input class="form-control text-regular" type="text" id="weight" placeholder="1"/>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label text-small" for="height">Height</label>
+                  <input class="form-control text-regular" type="text" id="height" placeholder="2"/>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label text-small" for="width">Width</label>
+                  <input class="form-control text-regular" type="text" id="width" placeholder="3"/>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label text-small" for="lenght">Lenght</label>
+                  <input class="form-control text-regular" type="text" id="lenght" placeholder="4"/>
+                </div>
+              </div>
+              <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                  <input class="form-check-input" type="checkbox" id="fragille"/>
+                  <label class="form-check-label text-regular" for="fragille">Fragille</label>
+                </div>
+                <div class="col-md-3">
+                  <input class="form-check-input" type="checkbox" id="express"/>
+                  <label class="form-check-label text-regular" for="express">Express delivery</label>
+                </div>
+                <div class="col-md-3">
+                  <input class="form-check-input" type="checkbox" id="insurance" checked="checked"/>
+                  <label class="form-check-label text-regular" for="insurance">Insurance</label>
+                </div>
+                <div class="col-md-3">
+                  <input class="form-check-input" type="checkbox" id="packaging"/>
+                  <label class="form-check-label text-regular" for="packaging">Packaging</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-end"> 
+                  <button class="btn btn-primary px-4 mt-4" type="submit">Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row text-white gx-5 py-5">   
+          <div class="col-6">
+            <div class="banner-services p-5">
+              <h4 class="mb-4">Quality <br/>services</h4>
+              <button class="btn btn-primary btn-arrow px-5">Services</button>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="banner-company p-5">
+              <h4 class="mb-4">Rolso transportation <br/>company</h4>
+              <p class="text-regular pale">Nullam dui augue, bibendum in maximus vel, blandit placerat ipsum. Praesent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer text-white py-5">
       <div class="container">
         <div class="row footer-top py-5">

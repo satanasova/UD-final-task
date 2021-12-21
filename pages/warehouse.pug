@@ -1,0 +1,17 @@
+extend template.pug
+include ../components/hero/hero
+include ../components/page-title-hover/page-title-hover
+
+block head 
+    link(rel="stylesheet", href="./css/warehouse.css")
+    title Warehouse
+
+block content
+    +hero()
+
+
+    +pageTitleHover('Warehouse', [
+        {title:'Home', link: './index.html'},
+        {title:'About Us', link: './about.html'},
+        {title:'Warehouse', link: './warehouse.html'}
+    ])

@@ -125,18 +125,11 @@
 
 .appointment form {
   box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
-  .appointment form .form-control::placeholder {
-    color: #382933; }
-  .appointment form .form-control:focus::placeholder {
-    color: transparent; }
-  .appointment form textarea {
-    resize: none;
-    min-height: 9.0625rem; }
 
 .projects {
   padding-bottom: 10rem; }
   .projects img {
-    min-width: 780px; }
+    min-width: 48.75rem; }
   .projects .splide__arrows {
     display: none; }
   .projects .splide__pagination {

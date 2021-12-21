@@ -7992,3 +7992,18 @@ body {
     background-color: rgba(255, 255, 255, 0.2); }
   .footer-bottom .footer-contacts .contact-details {
     font-size: 1.125rem; }
+
+form .form-control,
+form .form-select,
+form .form-check-input {
+  border-radius: 0 !important; }
+
+form .form-control::placeholder {
+  color: #382933; }
+
+form .form-control:focus::placeholder {
+  color: transparent; }
+
+form textarea {
+  resize: none;
+  min-height: 9.0625rem; }

@@ -1,0 +1,17 @@
+extend template.pug
+include ../components/hero/hero
+include ../components/page-title-hover/page-title-hover
+
+block head 
+    link(rel="stylesheet", href="./css/faqs.css")
+    title FAQs
+
+block content
+    +hero()
+
+
+    +pageTitleHover('FAQs', [
+        {title:'Home', link: './index.html'},
+        {title:'About', link: './about.html'},
+        {title:'FAQs', link: './faqs.html'}
+    ])

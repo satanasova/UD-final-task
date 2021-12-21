@@ -1,0 +1,44 @@
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.8) 0%, rgba(1, 114, 128, 0.8) 100%);
+  padding: 12.5rem 0 18.75rem 0;
+  position: relative; }
+  .hero .watermark {
+    position: absolute;
+    color: #FFFFFF30;
+    bottom: 17%;
+    left: 54%;
+    font-size: 350px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 350px;
+    user-select: none; }
+
+.page-title-hover {
+  position: relative;
+  transform: translateY(-50%); }
+  .page-title-hover .container {
+    box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+    width: 60%; }
+
+.appointment form .form-select {
+  background-image: url("../images/svgs/caret-down.svg"); }
+
+.appointment form .form-check-input:focus {
+  box-shadow: none; }
+
+.appointment form .form-check-input[type="checkbox"] {
+  border: 1px solid #a3a3a3; }
+
+.appointment form .form-check-input:checked {
+  background-color: transparent;
+  border-color: transparent; }
+  .appointment form .form-check-input:checked[type="checkbox"] {
+    background-image: url("../images/svgs/check-square.svg"); }
+
+.appointment .banner-services {
+  min-height: 16.625rem;
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.5) 0%, rgba(1, 114, 128, 0.5) 100%); }
+
+.appointment .banner-company {
+  min-height: 16.625rem;
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.8) 0%, rgba(1, 114, 128, 0.8) 100%); }

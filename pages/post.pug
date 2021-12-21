@@ -1,0 +1,17 @@
+extend template.pug
+include ../components/hero/hero
+//- include ../components/page-title-hover/page-title-hover
+
+block head 
+    link(rel="stylesheet", href="./css/post.css")
+    title Post
+
+block content
+    +hero()
+
+
+    //- +pageTitleHover('Quote', [
+    //-     {title:'Home', link: './index.html'},
+    //-     {title:'About', link: './about.html'},
+    //-     {title:'Quote', link: './quote.html'}
+    //- ])
