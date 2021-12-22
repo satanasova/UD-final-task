@@ -8006,4 +8006,4 @@ form .form-control:focus::placeholder {
 
 form textarea {
   resize: none;
-  min-height: 9.0625rem; }
+  min-height: 9.0625rem !important; }

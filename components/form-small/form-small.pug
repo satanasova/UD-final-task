@@ -1,0 +1,19 @@
+mixin formSmall()
+    form.row.h-100.py-5.px-4(action="")
+        .col-md-6 
+            label.form-label.text-small(for="name") Full Name
+            input.form-control.text-regular(type="text" id="name" placeholder="John Doe" required)
+        .col-md-6 
+            label.form-label.text-small(for="phone") Phone
+            input.form-control.text-regular(type="tel" id="phone" placeholder="+1 234 456 7890")
+        .col-md-6 
+            label.form-label.text-small(for="email") Email
+            input.form-control.text-regular(type="email" id="email" placeholder="JonhDoe@gmail.com" required)
+        .col-md-6 
+            label.form-label.text-small(for="subject") Subject
+            input.form-control.text-regular(type="text" id="subject" placeholder="Road Freight")
+        .col-12 
+            label.form-label.text-small(for="message") Message
+            textarea.form-control.text-regular(type="text" id="message" placeholder="Text")
+        .col-12.text-end 
+            button.btn.btn-primary.px-4.mt-4(type="submit") Appointment

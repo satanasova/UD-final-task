@@ -1,6 +1,9 @@
 extend template.pug
 include ../components/hero/hero
 include ../components/page-title-hover/page-title-hover
+include ../components/google-map/google-map
+include ../components/form-small/form-small
+include ../components/mini-card/mini-card
 
 block head 
     link(rel="stylesheet", href="./css/contacts.css")
@@ -14,3 +17,32 @@ block content
         {title:'Home', link: './index.html'},
         {title:'Contacts', link: './contacts.html'}
     ])
+
+    section.map
+        .container-fluid
+            .row
+                .col-12.p-0
+                    +googleMap()
+
+    section.contacts 
+        .container.px-5 
+            .row.contacts-cards 
+                .col-4
+                    +miniCard('phone-call','secondary','Phones',['+8 (495) 989 20 11', '+8 (495) 969 60 12']) 
+                .col-4 
+                    +miniCard('address','primary','Address',['4621 Hill Croft Farm', 'Road']) 
+                .col-4 
+                    +miniCard('mail','secondary','Emails',['rolso@site.com', 'rolso@support.com']) 
+    
+    section.contacts-content.pb-5 
+        .container.p-5 
+            .row.gx-5 
+                .col-7 
+                    +formSmall()
+                .col-5 
+                    .banner.text-white.d-flex.flex-column.justify-content-end.align-items-start.py-5.px-4
+                        h4.ms-3 Quality 
+                            br
+                            |services 
+                        button.btn.btn-primary.btn-arrow.px-5.m-3 Services 
+

@@ -1,3 +1,31 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/form-small/form-small.scss';
+@import '../components/mini-card/mini-card.scss';
+
+.map {
+    margin-top: -15rem;
+    iframe {
+        min-height: 80vh;
+    }
+}
+
+.contacts {
+    position: relative;
+    transform: translateY(-50%);
+    .mini-card {
+        margin-bottom: 0 !important;
+    }
+}
+
+.contacts-content {
+    form {
+        margin-bottom: 0;
+    }
+    .banner {
+        background: url('../images/cats/blue-cat-4.jpg') no-repeat center;
+        background-size: cover;
+        min-height: 35.9375rem; //575px
+    }
+}
