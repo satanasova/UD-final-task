@@ -22,7 +22,8 @@
             }
 
             &-header {
-                flex-direction: column;
+                display: block !important;
+                min-width: 7.4rem; //118.4px
             }
 
             &-btn {

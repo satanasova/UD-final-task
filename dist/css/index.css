@@ -59,7 +59,8 @@
   .price-cards.horizontal .price-card-header, .price-cards.horizontal .price-card-title {
     border-bottom: none !important; }
   .price-cards.horizontal .price-card-header {
-    flex-direction: column; }
+    display: block !important;
+    min-width: 7.4rem; }
   .price-cards.horizontal .price-card-btn {
     align-self: start; }
   .price-cards.horizontal .price-card.big {
