@@ -1,3 +1,44 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/mini-card/mini-card.scss';
+
+.faqs {
+    .accordion {
+        &-button{
+            &:not(.collapsed) {
+                color: inherit;
+                background-color: transparent;
+                box-shadow: none;
+                &::before{
+                    content: '';
+                    width: 4rem; //64px
+                    height: 4rem; //64px
+                    right: 0;
+                    position: absolute;
+                    background-color: $color_secondary;
+                }
+                &::after {
+                    background-image: url('../images/svgs/chevron-up.svg');
+                    transform: rotate(-360deg);
+                }
+            }
+            &:focus {
+                box-shadow: none;
+            }
+            &::after {
+                background-image: url('../images/svgs/chevron-down.svg');
+            }
+        }
+
+        &-body {
+            padding-right: 6rem;
+        }
+    }
+
+    .banner {
+        background-color: #D8D8D8;
+        background:  linear-gradient(121.38deg, rgba(0, 0, 142, 0.7) 13.19%, rgba(1, 114, 128, 0.7) 46.23%, #D8D8D8 64.85%);
+    }
+
+}

@@ -19,3 +19,41 @@
   .page-title-hover .container {
     box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
     width: 60%; }
+
+.mini-card {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .mini-card-icon {
+    min-width: 7.375rem;
+    min-height: 7.375rem; }
+    .mini-card-icon.primary {
+      background-color: #0F0FB1; }
+    .mini-card-icon.secondary {
+      background-color: #2e8995; }
+
+.faqs .accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none; }
+  .faqs .accordion-button:not(.collapsed)::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    position: absolute;
+    background-color: #2e8995; }
+  .faqs .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/svgs/chevron-up.svg");
+    transform: rotate(-360deg); }
+
+.faqs .accordion-button:focus {
+  box-shadow: none; }
+
+.faqs .accordion-button::after {
+  background-image: url("../images/svgs/chevron-down.svg"); }
+
+.faqs .accordion-body {
+  padding-right: 6rem; }
+
+.faqs .banner {
+  background-color: #D8D8D8;
+  background: linear-gradient(121.38deg, rgba(0, 0, 142, 0.7) 13.19%, rgba(1, 114, 128, 0.7) 46.23%, #D8D8D8 64.85%); }
