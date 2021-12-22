@@ -20,6 +20,13 @@
             }
             .road {
                 background: url('../images/cats/road.jpeg') center;
+                .sort-item-label {
+                    h5 {
+                        font-size: 1.375rem; //22px
+                    }
+                    background-color: $color_primary-dark;
+                    max-width: 19.6875rem; //315px
+                }
             }
             .air {
                 background: url('../images/cats/air.jpeg') center;
