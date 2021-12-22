@@ -7,8 +7,32 @@
     color: #FFFFFF30;
     bottom: 17%;
     left: 54%;
-    font-size: 350px;
+    font-size: 21.875rem;
+    line-height: 21.875rem;
     font-weight: 700;
     white-space: nowrap;
-    line-height: 350px;
     user-select: none; }
+
+.page-not-found {
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.7) 0%, rgba(1, 114, 128, 0.7) 100%); }
+  .page-not-found .container-fluid {
+    position: relative; }
+    .page-not-found .container-fluid .watermark {
+      position: absolute;
+      top: -45%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #FFFFFF30;
+      font-size: 18.75rem;
+      line-height: 18.75rem;
+      font-weight: 700;
+      white-space: nowrap;
+      user-select: none; }
+    .page-not-found .container-fluid .input-group .form-control::placeholder {
+      color: #19456b;
+      font-weight: 600;
+      font-size: 1.125rem; }
+    .page-not-found .container-fluid .input-group-text {
+      background-color: #00008E;
+      border-color: #00008E; }

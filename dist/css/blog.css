@@ -7,10 +7,10 @@
     color: #FFFFFF30;
     bottom: 17%;
     left: 54%;
-    font-size: 350px;
+    font-size: 21.875rem;
+    line-height: 21.875rem;
     font-weight: 700;
     white-space: nowrap;
-    line-height: 350px;
     user-select: none; }
 
 .page-title-hover {

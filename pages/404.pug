@@ -10,4 +10,23 @@ html(lang="en")
         link(rel="stylesheet", href="./css/404.css")
         title 404
 
-    +hero()
+    section.page-not-found.text-white.d-flex.align-items-center
+        .container-fluid 
+            .row.justify-content-center
+                .col-12.text-center
+                    h1 Page not found 
+                    p.text-regular.pale.py-4 Maecenas interdum, metus ut rhoncus dignissim, lorem mi convallis nisi, sit amet
+                        br
+                        |facilisis nisl nulla non odio. Phasellus mauris quam, ullamcorper
+                .col-md-8.col-lg-4.text-center
+                    .input-group
+                        input.form-control.border-end-0.rounded-0.p-3(type="text", placeholder="Search word")
+                        a.input-group-text.rounded-0.px-3(href="#")
+                            img(src="./images/svgs/minifier.svg")
+                .col-12.text-center 
+                    a.btn.btn-primary.btn-arrow.centered.px-5.m-5(href="./index.html") Go to Home
+            .watermark 404
+
+
+
+    
