@@ -44,8 +44,8 @@ function splideHandler() {
         
             labelTitle.text(activeTitle);
             labelText.text(activeText);
-            
         })
+
     } else if($('.splide[data-idx="services"]').length > 0){
         const splideServices = new Splide('.splide[data-idx="services"]', {
             autoplay: true,
@@ -61,6 +61,12 @@ function splideHandler() {
         });
 
         splideServices.mount();
+    } else if($('.splide[data-idx="warehouse-services"]').length > 0) {
+        const splideWarehouse = new Splide('.splide[data-idx="warehouse-services"]', {
+            autoplay: true,
+            type: 'loop',
+        }).mount();
+        
     } else {
         return;
     }
@@ -76,12 +82,12 @@ function sort() {
             if($(target).hasClass('btn')) {
                 $('.sort-content').empty()
                 const sortCondition = $(target).attr('data-idx');
-                console.log(sortItems);
+
                 const sorted = sortItems.filter((idx,item) => {
                     return $(item).find(`.${sortCondition}`).length > 0;
                 }) 
-                console.log(sorted);
-                const itemsToAppend = sorted.length>0 ? sorted : sortItems
+
+                const itemsToAppend = sorted.length > 0 ? sorted : sortItems
                 itemsToAppend.appendTo('.sort-content')
             } 
         })
