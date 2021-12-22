@@ -1,10 +1,61 @@
 .price-cards {
-    .price-card {
-        width: 86%;
-        margin: 0 auto;
-        min-height: 32.625rem; //522px
-        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+    &.vertical {
+        .price-card {
+            min-height: 32.625rem; //522px
+            width: 86%;
+        }
+    }
 
+    &.horizontal {
+        .price-card {
+            max-height: 12.75rem; //204px
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+
+            &-header,
+            &-title {
+                border-bottom: none !important;
+            }
+
+            &-header {
+                flex-direction: column;
+            }
+
+            &-btn {
+                align-self: start;
+            }
+
+            &.big {
+                color: white;
+                background: linear-gradient(135deg, #00008E 0%, #017280 100%);
+                .card-title,
+                .header-save,
+                .header-title,
+                .card-subtitle,
+                .price-card-content {
+                    color: currentColor;
+                }
+                svg {
+                    path {
+                        fill: currentColor;
+                    }
+                }
+                .btn {
+                    background-color: transparent;
+                    border-color: currentColor;
+                }
+
+            }
+        }
+    }
+    .price-card {
+        margin: 0 auto;
+        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+        
         .card-title,
         .header-save {
             color: $color-secondary;

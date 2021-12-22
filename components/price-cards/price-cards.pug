@@ -25,11 +25,20 @@ mixin singleCard(cardClass, headerTitle, savePerc, price, pricePerYear)
             button.btn.btn-primary.px-5 Buy Now
 
 
-mixin priceCards()
-    .row.price-cards.py-5.justify-content-center 
-        .col-4
-            +singleCard('small','Basic', '10', '25', '85')                  
-        .col-4
-            +singleCard('big','Full Pack', '20', '75', '165')                  
-        .col-4
-            +singleCard('small','Advanced', '15', '35', '120')                  
+mixin priceCards(orientation)
+    .row.price-cards.py-5.justify-content-center(class=orientation)
+        if orientation === 'horizontal'
+            .col-12
+                +singleCard('small','Basic', '10', '25', '85')                  
+            .col-12
+                +singleCard('big','Full Pack', '20', '75', '165')                  
+            .col-12
+                +singleCard('small','Advanced', '15', '35', '120')                  
+
+        else if orientation === "vertical"
+            .col-4
+                +singleCard('small','Basic', '10', '25', '85')                  
+            .col-4
+                +singleCard('big','Full Pack', '20', '75', '165')                  
+            .col-4
+                +singleCard('small','Advanced', '15', '35', '120')                  

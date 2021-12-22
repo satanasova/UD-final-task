@@ -1,3 +1,28 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/price-cards/price-cards.scss';
+
+.plans {
+    .price-cards {
+        .price-card {
+            &.big {
+                &::before {
+                    position: absolute;
+                    content: 'Best Offer';
+                    text-align: center;
+                    display: block;
+                    width: 47%;
+                    padding: 0.5rem 0;
+                    background: $color_secondary;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 14px;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -100%);
+                }
+            }
+        }
+    }
+}

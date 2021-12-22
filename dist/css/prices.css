@@ -19,3 +19,76 @@
   .page-title-hover .container {
     box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
     width: 60%; }
+
+.price-cards.vertical .price-card {
+  min-height: 32.625rem;
+  width: 86%; }
+
+.price-cards.horizontal .price-card {
+  max-height: 12.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important; }
+  .price-cards.horizontal .price-card-header, .price-cards.horizontal .price-card-title {
+    border-bottom: none !important; }
+  .price-cards.horizontal .price-card-header {
+    flex-direction: column; }
+  .price-cards.horizontal .price-card-btn {
+    align-self: start; }
+  .price-cards.horizontal .price-card.big {
+    color: white;
+    background: linear-gradient(135deg, #00008E 0%, #017280 100%); }
+    .price-cards.horizontal .price-card.big .card-title,
+    .price-cards.horizontal .price-card.big .header-save,
+    .price-cards.horizontal .price-card.big .header-title,
+    .price-cards.horizontal .price-card.big .card-subtitle,
+    .price-cards.horizontal .price-card.big .price-card-content {
+      color: currentColor; }
+    .price-cards.horizontal .price-card.big svg path {
+      fill: currentColor; }
+    .price-cards.horizontal .price-card.big .btn {
+      background-color: transparent;
+      border-color: currentColor; }
+
+.price-cards .price-card {
+  margin: 0 auto;
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .price-cards .price-card .card-title,
+  .price-cards .price-card .header-save {
+    color: #2e8995; }
+  .price-cards .price-card-header .header-save {
+    font-size: .875rem;
+    font-weight: 700;
+    align-self: center; }
+  .price-cards .price-card-header .header-title {
+    font-size: 1.3475rem; }
+  .price-cards .price-card-content {
+    color: #382933; }
+    .price-cards .price-card-content svg {
+      margin-right: .5rem; }
+  .price-cards .price-card.big {
+    position: relative;
+    width: 100%; }
+    .price-cards .price-card.big .card-title,
+    .price-cards .price-card.big .header-save {
+      color: #0F0FB1; }
+    .price-cards .price-card.big .price-card-content p:nth-child(2) {
+      font-weight: 600; }
+
+.plans .price-cards .price-card.big::before {
+  position: absolute;
+  content: 'Best Offer';
+  text-align: center;
+  display: block;
+  width: 47%;
+  padding: 0.5rem 0;
+  background: #2e8995;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%); }
