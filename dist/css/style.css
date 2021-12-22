@@ -7889,6 +7889,9 @@ body {
   body .page-title {
     color: #19456b;
     font-weight: 800; }
+    body .page-title.small {
+      font-size: .875rem;
+      font-weight: 600; }
   body .card-title {
     font-size: 1.125rem;
     font-weight: 500; }

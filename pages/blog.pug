@@ -1,6 +1,8 @@
 extend template.pug
 include ../components/hero/hero
 include ../components/page-title-hover/page-title-hover
+include ../components/blog-posts/blog-posts
+include ../components/box-title/box-title
 
 block head 
     link(rel="stylesheet", href="./css/blog.css")
@@ -17,4 +19,69 @@ block content
     ])
 
 
-    
+    section.blog-posts 
+        .container.px-5.pb-5 
+            .row.gx-5
+                .col-8 
+                    +blogPostBig('shipping', '28 Jan 2021', 'merkulove', 'cargo, logistic', 'Excellent company quality services', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                    +blogPostBig('road', '12 Feb 2021', 'catlove-23', 'trucks', 'Road, Air And Sea Transport Are Available', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                    +blogPostBig('train', '02 Mar 2021', 'merkulove', 'cargo, services', 'Packaging And Logistics Services To The World', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                    +blogPostBig('air', '22 Mar 2021', 'sunflower', 'services, logistic', 'Plane Transport To The Variety Countries', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                    +blogPostBig('shipping', '09 Apr 2021', 'batman', 'logistic', 'The Passenger Transport Public Operators.', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                    +blogPostBig('air', '14 Apr 2021', 'merkulove', 'cargo', 'Air Transport May Be Public Operators', 'Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+                .col-4 
+                    .categories 
+                        +boxTitle('Categories', 'folder-open-big', 'primary')
+                        .categories-content.p-4 
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Cargo 
+                                p.text-regular.pale 14
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Logistic 
+                                p.text-regular.pale 45
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Services 
+                                p.text-regular.pale 67
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Trucks 
+                                p.text-regular.pale 4  
+                    .laetst-posts 
+                        +boxTitle('Latest Posts', 'book', 'secondary')
+                        .latest-posts-content.p-4 
+                            +blogPostSmall('shipping','Excellent company quality services','28 Jan 2021')
+                            +blogPostSmall('road','Road, Air And Sea Transport Are Available','12 Feb 2021')
+                            +blogPostSmall('train','Packaging And Logistics Services To The World','02 Mar 2021')
+                    .archives
+                        +boxTitle('Archives', 'calendar-check', 'primary')
+                        .archives-content.p-4 
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |November
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |December
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |January
+
+                    .recent-comments
+                        +boxTitle('Recent Comments', 'comment-alt-lines', 'secondary')
+                        .recent-comments-content.p-4 
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium

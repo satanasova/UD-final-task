@@ -19,3 +19,20 @@
   .page-title-hover .container {
     box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
     width: 60%; }
+
+.box-title {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .box-title .icon {
+    min-width: 4rem;
+    min-height: 4rem; }
+    .box-title .icon.primary {
+      background-color: #00008E; }
+    .box-title .icon.secondary {
+      background-color: #2e8995; }
+
+.blog-post-big .img {
+  min-height: 28.4375rem; }
+
+.blog-post-small {
+  max-height: 4.6875rem;
+  overflow: hidden; }

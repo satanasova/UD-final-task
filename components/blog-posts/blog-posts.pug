@@ -1,0 +1,31 @@
+mixin blogPostBig(imgName,date,autor,category,title,text)
+    .blog-post-big.pb-5 
+        .row 
+            .col-12 
+                .img.w-100(style= `background: url('./images/cats/${imgName}.jpeg') no-repeat center; background-size: cover;`)
+                .post-details.d-flex.py-4
+                    .post-details-date.d-flex.align-items-center.me-5
+                        img.pe-2.pb-1(src='./images/svgs/calendar-small.svg')
+                        p.text-small.mb-0= date
+                    .post-details-autor.d-flex.align-items-center.me-5
+                        img.pe-2(src='./images/svgs/user-circle.svg')
+                        p.text-small.mb-0= autor
+                    .post-details-category.d-flex.align-items-center.me-5
+                        img.pe-2(src='./images/svgs/folder.svg')
+                        p.text-small.mb-0= category
+                h4.page-title= title 
+                p.text-regular= text
+
+
+
+
+mixin blogPostSmall(imgName,title,date)
+    .blog-post-small.mb-3 
+        .row 
+            .col-4 
+                img.img-fluid.w-100(src=`./images/cats/${imgName}.jpeg`)
+            .col-8
+                p.page-title.small= title 
+                .post-details-date.d-flex.align-items-center.me-5
+                    img.pe-2.pb-1(src='./images/svgs/calendar-small.svg')
+                    p.text-small.mb-0= date

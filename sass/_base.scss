@@ -118,6 +118,10 @@ body {
     .page-title {
         color: $color_title;
         font-weight: 800;
+        &.small {
+            font-size: .875rem; // 14px
+            font-weight: 600;
+        }
     }
 
     .card-title {

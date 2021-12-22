@@ -1,0 +1,10 @@
+.blog-post-big {
+    .img {
+        min-height: 28.4375rem; // 455px
+    }
+}
+
+.blog-post-small{
+    max-height: 4.6875rem; //75px
+    overflow: hidden;
+}
