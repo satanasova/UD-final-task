@@ -1,6 +1,7 @@
 extend template.pug
 include ../components/hero/hero
-//- include ../components/page-title-hover/page-title-hover
+include ../components/blog-posts/blog-posts
+include ../components/box-title/box-title
 
 block head 
     link(rel="stylesheet", href="./css/post.css")
@@ -9,9 +10,144 @@ block head
 block content
     +hero()
 
+    section.post 
+        .container.px-5.pb-5 
+            .row
+                .col-12 
+                    .post-img.w-100
+            .row.gx-5.pt-5 
+                .col-8 
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="./home.html") Home
+                        li.breadcrumb-item
+                            a(href="./about.html") About
+                        li.breadcrumb-item
+                            a(href="./post.html") Blog
+                    h1.page-title Maintains positive momentum
+                    .post-details.d-flex.py-4
+                        .post-details-date.d-flex.align-items-center.me-5
+                            img.pe-2.pb-1(src='./images/svgs/calendar-small.svg')
+                            p.text-small.mb-0 28 Jan 2021
+                        .post-details-autor.d-flex.align-items-center.me-5
+                            img.pe-2(src='./images/svgs/user-circle.svg')
+                            p.text-small.mb-0 merkulove
+                        .post-details-category.d-flex.align-items-center.me-5
+                            img.pe-2(src='./images/svgs/folder.svg')
+                            p.text-small.mb-0 cargo, logistic
+                    .post-content.tex-regular 
+                        p Etiam id quam lacinia, vulputate neque nec, mollis quam. Donec ut quam urna. Proin bibendum risus quis sem ultricies, et vulputate erat pulvinar. Cras posuere leo nisi, non scelerisque tortor congue nec. Vivamus quis urna ac velit dapibus bibendum vitae a nibh. Suspendisse id libero eros. In dapibus bibendum sem sit amet feugiat.
+                        p Aliquam a ligula metus. Duis vel vestibulum mi, nec dapibus quam. Maecenas sit amet tortor laoreet, pretium eros eget, tristique felis. Cras non lobortis sapien. Aliquam porta, enim quis mollis dignissim, massa lacus finibus mauris, at varius purus nunc nec tortor. Aenean vestibulum nec arcu sed tincidunt. Nunc lectus quam, elementum non felis vel, finibus rhoncus nunc.
+                        p Phasellus molestie hendrerit pharetra. Cras congue, nibh et lacinia tincidunt, nulla lorem ornare nunc, ac aliquam lorem diam vel tellus. Donec vel elementum orci. Praesent ut elit eu elit consequat faucibus ut vel lorem.
+                        p Cras cursus ultrices massa et dapibus. Nunc vel hendrerit massa, ullamcorper maximus erat. Fusce molestie dolor turpis. Etiam id quam lacinia, vulputate neque nec, mollis quam. Donec ut quam urna. Proin bibendum risus quis sem ultricies, et vulputate erat pulvinar.
+                        p Aliquam a ligula metus. Duis vel vestibulum mi, nec dapibus quam. Maecenas sit amet tortor laoreet, pretium eros eget, tristique felis. Cras non lobortis sapien. Aliquam porta, enim quis mollis dignissim, massa lacus finibus mauris, at varius purus nunc nec tortor. Aenean vestibulum nec arcu sed tincidunt. Nunc lectus quam, elementum non felis vel, finibus rhoncus nunc.
+                        .check-list.py-4
+                            p.d-flex.align-items-center 
+                                img.me-2(src=`./images/svgs/check-circle-primary.svg`)
+                                |Maecenas pretium interdum mauris sed sollicitudin
+                            p.d-flex.align-items-center 
+                                img.me-2(src=`./images/svgs/check-circle-primary.svg`)
+                                |Sed interdum lacinia sem, sed euismod purus rhoncus a
+                            p.d-flex.align-items-center 
+                                img.me-2(src=`./images/svgs/check-circle-primary.svg`)
+                                |Donec cursus interdum purus, et fermentum
+                        p Proin laoreet ultrices dignissim. Proin dapibus dolor eu pulvinar viverra. Integer in mi nec lectus rutrum gravida id non neque. Vestibulum nisl dolor, blandit quis porttitor sed, consequat non nibh. Phasellus pulvinar mauris ac eros porttitor consequat.
+                        .quote.py-5.px-4.mb-3
+                            p Ut viverra odio arcu, sit amet gravida nulla consequat eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris maximus purus nec urna sodales, a fringilla mauris ultrices. Quisque ut interdum ipsum. Vivamus quis augue quis turpis porta ullamcorper nec nec est. 
+                            p.name.mb-0 Maria Espare
+                            p.client.mb-0 Client
+                        p Nulla at accumsan nisl. Nunc blandit ornare purus ac bibendum. Sed sit amet blandit lectus. Nunc rutrum mi vitae arcu cursus, ac pretium justo aliquam. Etiam vitae lacinia tellus. Ut porttitor sem non pharetra condimentum. Curabitur accumsan lobortis sem, a tristique justo vulputate quis.
+                        p Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dapibus efficitur neque quis tristique. Etiam luctus nulla est, nec consequat leo dictum id. Pellentesque eget arcu ac mauris iaculis facilisis. Nulla rutrum, sem at sodales fringilla, lacus mi sodales nibh, at imperdiet nulla orci at lacus. Pellentesque venenatis tincidunt arcu a interdum.
+                    hr
+                    .tags.d-flex.align-items-center 
+                        img.pe-2(src='./images/svgs/tags.svg')
+                        p.text-small.mb-0 cargo, logistic, trucks
 
-    //- +pageTitleHover('Quote', [
-    //-     {title:'Home', link: './index.html'},
-    //-     {title:'About', link: './about.html'},
-    //-     {title:'Quote', link: './quote.html'}
-    //- ])
+
+                .col-4
+                    .categories 
+                        +boxTitle('Categories', 'folder-open-big', 'primary')
+                        .categories-content.p-4 
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Cargo 
+                                p.text-regular.pale 14
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Logistic 
+                                p.text-regular.pale 45
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Services 
+                                p.text-regular.pale 67
+                            .single-category.d-flex.justify-content-between   
+                                p.text-regular Trucks 
+                                p.text-regular.pale 4  
+                    .laetst-posts 
+                        +boxTitle('Latest Posts', 'book', 'secondary')
+                        .latest-posts-content.p-4 
+                            +blogPostSmall('shipping','Excellent company quality services','28 Jan 2021')
+                            +blogPostSmall('road','Road, Air And Sea Transport Are Available','12 Feb 2021')
+                            +blogPostSmall('train','Packaging And Logistics Services To The World','02 Mar 2021')
+                    .archives
+                        +boxTitle('Archives', 'calendar-check', 'primary')
+                        .archives-content.p-4 
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |November
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |December
+                            p.page-title.small 
+                                img.me-2(src='../images/svgs/caret-right.svg')
+                                |January
+
+                    .recent-comments
+                        +boxTitle('Recent Comments', 'comment-alt-lines', 'secondary')
+                        .recent-comments-content.p-4 
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium
+                            .single-comment.d-flex.align-items-start 
+                                img.me-3.pt-1(src='../images/svgs/comment.svg')
+                                p.page-title.small Admin 
+                                    span.fw-normal in Powerfull Features of 
+                                        br
+                                        |Transporterium
+
+    section.comment 
+        .container.p-5.mb-5
+            .row
+                .col-8
+                    .comment-content.p-5
+                        h3.page-title.pb-4 Leave a comment
+                        .post-display.d-flex.pb-5
+                            .row 
+                                .col-2 
+                                    img.img-fluid(src='./images/cats/train.jpeg')
+                                .col-10 
+                                    .post-display-details.d-flex.align-items-start 
+                                        p.page-title.small.me-4 Marina Kranton
+                                        .post-details-date.d-flex.align-items-center.me-5
+                                            img.pe-2.pb-1(src='./images/svgs/calendar-small.svg')
+                                            p.text-small.mb-0 28 Jan 2021
+                                        img.ms-auto.align-self-end(src='./images/svgs/carret-left.svg')
+                                    p.text-regular Proin laoreet ultrices dignissim. Proin dapibus dolor eu pulvinar viverra. Integer in mi nec lectus rutrum gravida id non neque
+                        form.row.gy-3(action="")
+                            .col-md-6 
+                                label.form-label.text-small(for="name") Full Name
+                                input.form-control.text-regular(type="text" id="name" placeholder="John Doe" required)
+                            .col-md-6 
+                                label.form-label.text-small(for="email") Email
+                                input.form-control.text-regular(type="email" id="email" placeholder="JonhDoe@gmail.com" required)
+                            .col-12 
+                                label.form-label.text-small(for="message") Message
+                                textarea.form-control.text-regular(type="text" id="message" placeholder="Text")
+                            .col-12.text-end 
+                                button.btn.btn-primary.px-4.mt-4(type="submit") Appointment

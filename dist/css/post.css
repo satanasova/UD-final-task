@@ -12,3 +12,40 @@
     font-weight: 700;
     white-space: nowrap;
     user-select: none; }
+
+.box-title {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .box-title .icon {
+    min-width: 4rem;
+    min-height: 4rem; }
+    .box-title .icon.primary {
+      background-color: #00008E; }
+    .box-title .icon.secondary {
+      background-color: #2e8995; }
+
+.blog-post-big .img {
+  min-height: 28.4375rem; }
+
+.blog-post-small {
+  max-height: 4.6875rem;
+  overflow: hidden; }
+
+.post {
+  position: relative;
+  margin-top: -5rem; }
+  .post .post-img {
+    min-height: 44.0625rem;
+    background: url("../images/cats/air.jpeg") no-repeat center;
+    background-size: cover; }
+  .post .post-content .quote {
+    border-left: 10px solid #00008E;
+    font-weight: 500; }
+    .post .post-content .quote .name {
+      font-family: "Poppins", sans-serif;
+      font-style: italic;
+      color: #2e8995; }
+    .post .post-content .quote .client {
+      color: #0F0FB1; }
+
+.comment-content {
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }

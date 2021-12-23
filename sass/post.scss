@@ -1,3 +1,36 @@
 @import './variables';
 @import '../components/hero/hero.scss';
-// @import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/box-title/box-title.scss';
+@import '../components/blog-posts/blog-posts.scss';
+
+.post {
+    position: relative;
+    margin-top: -5rem;
+
+    .post-img {
+        min-height: 44.0625rem; // 705px
+        background: url('../images/cats/air.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    .post-content {
+        .quote {
+            border-left: 10px solid $color_primary-dark;
+            font-weight: 500;
+            .name {
+                font-family: $font-primary;
+                font-style: italic;
+                color: $color_secondary;
+            }
+            .client {
+                color: $color_primary;
+            }
+        }
+    }
+}
+
+.comment {
+    &-content {
+        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+    }
+}
