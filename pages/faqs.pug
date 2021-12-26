@@ -18,9 +18,9 @@ block content
     ])
 
     section.faqs 
-        .container.px-5.pb-5 
-            .row 
-                .col-8.pt-1 
+        .container-xl.pb-5 
+            .row.justify-content-center
+                .col-lg-7.col-xl-8.pt-1.pb-5 
                     .faqs-acc.accordion(id="faq-accordion") 
                         mixin accItem(isActive,title,content,idx)
                             .accordion-item.border-0
@@ -45,11 +45,15 @@ block content
                         +accItem(false,'Powerfull Features of Transporterium','Etiam id quam lacinia, vulputate neque nec, mollis quam. Donec ut quam urna. Proin bibendum risus quis sem ultricies, et vulputate erat pulvinar. Cras posuere leo nisi, non scelerisque tortor congue nec. Vivamus quis urna ac velit dapibus bibendum vitae a nibh. Suspendisse id libero eros. In dapibus bibendum sem sit amet feugiat.','four')                
                         +accItem(false,'Awesome app which works for you','Etiam id quam lacinia, vulputate neque nec, mollis quam. Donec ut quam urna. Proin bibendum risus quis sem ultricies, et vulputate erat pulvinar. Cras posuere leo nisi, non scelerisque tortor congue nec. Vivamus quis urna ac velit dapibus bibendum vitae a nibh. Suspendisse id libero eros.','five')   
 
-                .col-4
+                .col-lg-5.col-xl-4
                     .faqs-contacts.px-4
-                        +miniCard('phone-call','primary','Phones',['+8 (495) 989 20 11', '+8 (495) 969 60 12']) 
-                        +miniCard('address','secondary','Address',['4621 Hill Croft Farm', 'Road']) 
-                        +miniCard('mail','primary','Emails',['rolso@site.com', 'rolso@support.com']) 
+                        .row.justify-content-center
+                            .col-md-6.col-lg-12
+                                +miniCard('phone-call','primary','Phones',['+8 (495) 989 20 11', '+8 (495) 969 60 12']) 
+                            .col-md-6.col-lg-12
+                                +miniCard('address','secondary','Address',['4621 Hill Croft Farm', 'Road']) 
+                            .col-md-6.col-lg-12
+                                +miniCard('mail','primary','Emails',['rolso@site.com', 'rolso@support.com']) 
             .row
                 .col-12
                     .banner.p-5.text-white

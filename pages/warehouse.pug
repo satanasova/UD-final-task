@@ -20,9 +20,9 @@ block content
     ])
 
     section.warehouse-details 
-        .container.px-5.pb-5 
+        .container-lg.pb-5 
             .row.gx-5 
-                .col-8
+                .col-lg-8
                     .main-details
                         h2.page-title Inland Empire warehousing
                         p.adrress.fw-bold.mb-5 
@@ -58,7 +58,7 @@ block content
                             p Suspendisse tristique et elit eget iaculis. Proin interdum placerat mauris, ac consectetur orci sagittis ac. Aliquam malesuada facilisis fringilla. Fusce finibus, sem nec congue gravida, libero nunc convallis purus, a faucibus leo ligula ut sapien. Duis imperdiet eleifend posuere.
 
 
-                .col-4
+                .col-lg-4
                     .aside-details
                         .building-info 
                             +boxTitle('Building information', 'folder-open', 'primary')
@@ -76,7 +76,7 @@ block content
                                 +infoBox('celsius', 'Temperature range', 'Ambient' )
 
     section.services
-        .container.p-5 
+        .container-lg.py-5 
             .row.pb-5 
                 .col-12.text-center 
                     h2.page-title Our best services 
@@ -86,17 +86,17 @@ block content
                         .splide__track 
                             ul.splide__list 
                                 li.splide__slide.mb-5
-                                    .row
+                                    .row.justify-content-center
                                         +imgCaptionCard('shipping')
                                         +imgCaptionCard('road')
                                         +imgCaptionCard('train')
                                 li.splide__slide.mb-5
-                                    .row
+                                    .row.justify-content-center
                                         +imgCaptionCard('air')
                                         +imgCaptionCard('train')
                                         +imgCaptionCard('shipping')
                                 li.splide__slide.mb-5
-                                    .row
+                                    .row.justify-content-center
                                         +imgCaptionCard('road')
                                         +imgCaptionCard('air')
                                         +imgCaptionCard('train')

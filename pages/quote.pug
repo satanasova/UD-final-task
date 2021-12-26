@@ -17,9 +17,9 @@ block content
     ])
 
     section.appointment 
-        .container.px-5 
+        .container-lg 
             .row.justify-content-center
-                .col-md-9.p-0
+                .col-10.col-lg-9.p-0
                     form(action="")
                         .row.g-3.mb-4
                             .col-md-4
@@ -70,29 +70,29 @@ block content
                                 label.form-label.text-small(for="lenght") Lenght
                                 input.form-control.text-regular(type="text" id="lenght" placeholder="4")
                         .row.g-3.mb-4
-                            .col-md-3
+                            .col-md-3.pe-0
                                 input.form-check-input(type="checkbox" id="fragille")
                                 label.form-check-label.text-regular(for="fragille") Fragille
-                            .col-md-3
+                            .col-md-3.pe-0
                                 input.form-check-input(type="checkbox" id="express")
                                 label.form-check-label.text-regular(for="express") Express delivery
-                            .col-md-3
+                            .col-md-3.pe-0
                                 input.form-check-input(type="checkbox" id="insurance" checked)
                                 label.form-check-label.text-regular(for="insurance") Insurance
-                            .col-md-3
+                            .col-md-3.pe-0
                                 input.form-check-input(type="checkbox" id="packaging")
                                 label.form-check-label.text-regular(for="packaging") Packaging
                         .row
                             .col-12.text-end 
                                 button.btn.btn-primary.px-4.mt-4(type="submit") Appointment
-            .row.text-white.gx-5.py-5    
-                .col-6
+            .row.text-white.gx-5.py-5.justify-content-center   
+                .col-sm-10.col-lg-6.mb-4
                     .banner-services.p-5
                         h4.mb-4 Quality 
                             br
                             |services
                         button.btn.btn-primary.btn-arrow.px-5 Services
-                .col-6
+                .col-sm-10.col-lg-6
                     .banner-company.p-5
                         h4.mb-4 Rolso transportation 
                             br

@@ -25,21 +25,21 @@ block content
                     +googleMap()
 
     section.contacts 
-        .container.px-5 
-            .row.contacts-cards 
-                .col-4
+        .container-xl 
+            .row.contacts-cards.justify-content-center
+                .col-10.col-md-6.col-xl-4.pb-3.pb-xl-0
                     +miniCard('phone-call','secondary','Phones',['+8 (495) 989 20 11', '+8 (495) 969 60 12']) 
-                .col-4 
+                .col-10.col-md-6.col-xl-4.pb-3.pb-xl-0 
                     +miniCard('address','primary','Address',['4621 Hill Croft Farm', 'Road']) 
-                .col-4 
+                .col-10.col-md-6.col-xl-4
                     +miniCard('mail','secondary','Emails',['rolso@site.com', 'rolso@support.com']) 
     
     section.contacts-content.pb-5 
-        .container.p-5 
-            .row.gx-5 
-                .col-7 
+        .container-lg.py-5 
+            .row.g-5.justify-content-center
+                .col-sm-10.col-lg-7 
                     +formSmall()
-                .col-5 
+                .col-sm-10.col-lg-5 
                     .banner.text-white.d-flex.flex-column.justify-content-end.align-items-start.py-5.px-4
                         h4.ms-3 Quality 
                             br
