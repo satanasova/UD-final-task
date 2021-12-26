@@ -10,7 +10,7 @@ function navItemActive() {
         pagePath.lastIndexOf('.')
     )
 
-    if(currentPage === 'index' || currentPage === "/dist/") {
+    if(currentPage === '/' || currentPage === 'index' || currentPage === "/dist/") {
         currentPage = 'home';
     }
 
