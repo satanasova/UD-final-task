@@ -23,7 +23,7 @@ mixin blogPostBig(imgName,date,autor,category,title,text)
 mixin blogPostSmall(imgName,title,date)
     .blog-post-small.mb-3 
         .row 
-            .col-4 
+            .col-4.p-0.px-xl-3 
                 img.img-fluid.w-100(src=`./images/cats/${imgName}.jpeg`)
             .col-8
                 p.page-title.small= title 
