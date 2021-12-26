@@ -35,6 +35,13 @@
   margin-bottom: 3rem;
   padding-left: 3rem !important;
   padding-right: 3rem !important; }
+  @media only screen and (max-width: 62em) {
+    .price-cards.horizontal .price-card {
+      max-height: unset;
+      flex-wrap: wrap; }
+      .price-cards.horizontal .price-card > * {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   .price-cards.horizontal .price-card-header, .price-cards.horizontal .price-card-title {
     border-bottom: none !important; }
   .price-cards.horizontal .price-card-header {
