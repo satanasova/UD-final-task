@@ -30,7 +30,7 @@
             }
 
             &.primary {
-                margin-top: 3rem;
+                margin-top: 3rem !important;
                 .step-icon {
                     &-num {
                         background-color: $color-secondary;
@@ -57,7 +57,13 @@
 .about {
     &-row {
         .achievements-row {
-            left: -50%;
+
+            @media only screen and(min-width:48em)and(max-width: 62em)  {  // lg 992px /16px default
+                left: -80%;
+            }
+            @media only screen and(min-width: 62em)  {  // lg 992px /16px default
+                left: -50%;
+            }
             .achievement {
                 &-title {
                     font-size: 1.0625rem; //17px
@@ -96,8 +102,8 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 9.1875rem; //147px
-                    height: 9.1875rem; //147px
+                    width: 147px;
+                    height: 147px;
                     border-radius: 50%;
                 }
             }

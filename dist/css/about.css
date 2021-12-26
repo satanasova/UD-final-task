@@ -18,7 +18,10 @@
   transform: translateY(-50%); }
   .page-title-hover .container {
     box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
-    width: 60%; }
+    width: auto; }
+    @media only screen and (min-width: 75em) {
+      .page-title-hover .container {
+        width: 60%; } }
 
 .about .about-row .about-photo {
   min-height: 53.125rem; }
@@ -92,7 +95,7 @@
     border-radius: 50%; }
 
 .steps-row .step.primary {
-  margin-top: 3rem; }
+  margin-top: 3rem !important; }
   .steps-row .step.primary .step-icon-num {
     background-color: #2e8995; }
 
@@ -105,17 +108,24 @@
   background: url("../images/cats/blue-cat-4.jpg") no-repeat center;
   background-size: cover; }
 
-.about-row .achievements-row {
-  left: -50%; }
-  .about-row .achievements-row .achievement-title {
-    font-size: 1.0625rem;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #382933; }
-  .about-row .achievements-row .achievement-details {
-    font-size: 1.125rem;
-    font-weight: 800;
-    color: #19456b; }
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+  .about-row .achievements-row {
+    left: -80%; } }
+
+@media only screen and (min-width: 62em) {
+  .about-row .achievements-row {
+    left: -50%; } }
+
+.about-row .achievements-row .achievement-title {
+  font-size: 1.0625rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #382933; }
+
+.about-row .achievements-row .achievement-details {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #19456b; }
 
 .section-progress .img-container {
   width: 100%;
@@ -132,6 +142,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 9.1875rem;
-    height: 9.1875rem;
+    width: 147px;
+    height: 147px;
     border-radius: 50%; }
