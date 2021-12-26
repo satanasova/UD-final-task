@@ -13,7 +13,7 @@ block head
 
 block content
     +hero()
-        .container.p-5 
+        .container-lg.py-5 
             .row.ps-3.py-5 
                 .col-10
                     h1 Transportation services around the World
@@ -23,9 +23,9 @@ block content
                     button.btn.btn-primary.btn-arrow.px-5 Consultation
     
     section.features 
-        .container.p-5.bg-white 
-            .row 
-                .col-4.features-box 
+        .container-lg.py-5.bg-white 
+            .row.justify-content-center
+                .col-10.col-sm-6.col-lg-4.order-2.order-lg-1.features-box
                     .feature.d-flex 
                         .feature-icon 
                             svg(width="38" height="43" viewBox="0 0 38 43" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -58,7 +58,7 @@ block content
                             h5.page-title Always on time 
                             p.text-regular Aliquam erat volutpat. Ut ut erat dignissim, eleifend         
 
-                .col-4.features-box 
+                .col-10.col-sm-6.col-lg-4.order-3.order-lg-2.features-box 
                     .feature.d-flex 
                         .feature-icon 
                             svg(width="38" height="43" viewBox="0 0 38 43" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -97,7 +97,7 @@ block content
                             h5.page-title Cargo Insurance
                             p.text-regular Suspendisse vulputate tellus consectetur sem faucibus         
 
-                .col-4.services-box.p-5
+                .col-10.col-lg-4.order-1.order-lg-3.services-box.p-5.mb-5.mb-lg-0
                     h3.mb-5 Services
                     ul 
                         li
@@ -114,46 +114,30 @@ block content
                                     path(d="M7.33594 2.5625H0.28125C0.117188 2.5625 0 2.70312 0 2.84375V4.15625C0 4.32031 0.117188 4.4375 0.28125 4.4375H7.33594V5.53906C7.33594 6.03125 7.94531 6.28906 8.29688 5.9375L10.3125 3.89844C10.5469 3.6875 10.5469 3.33594 10.3125 3.125L8.29688 1.08594C7.94531 0.734375 7.33594 0.992188 7.33594 1.48438V2.5625Z" fill="white")
                                     
     section.services 
-        .container.p-5 
+        .container-lg.py-5 
             .row.title-row.py-5.justify-content-center 
                 .col-12 
                     h2.page-title.text-center Rolso Logistic
                         br
                         |Services
             .row.images-row
-                .col-3.p-0 
-                    figure 
+                .col-6.col-md-3.p-0 
+                    figure.mb-0 
                         img.img-fluid(src="./images/cats/air.jpeg")
-                        //- figcaption 
-                            //- svg(width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-     path(fill-rule="evenodd" clip-rule="evenodd" d="M36.9447 41.8948H41.9372C42.2195 41.8936 42.4904 42.0035 42.69 42.2002C42.8897 42.397 43.0012 42.6639 43 42.9421C42.9983 43.526 42.5185 43.9983 41.9263 44H1.07366C0.480629 44 0 43.5264 0 42.9421C0 42.3581 0.480629 41.8841 1.07366 41.8841H6.07707L2.96346 31.6645C2.56839 30.3562 3.06034 28.9453 4.18726 28.1522L7.86999 25.5813V14.0497C7.88048 12.8847 8.84551 11.9474 10.0282 11.9548H10.3394V8.58014C10.3394 7.40565 11.3485 6.4535 12.5295 6.4535H16.8887V2.14772C16.8996 0.970339 17.8626 0.0165305 19.0574 0H30.4814C31.6804 0.0148774 32.6505 0.966206 32.6715 2.14772V11.9548H32.9827C33.5514 11.9495 34.0983 12.1677 34.5034 12.5607C34.9085 12.9537 35.138 13.4893 35.1409 14.0497V25.5813L38.8236 28.1626C39.9552 28.9527 40.4479 30.3669 40.0474 31.6749L36.9447 41.8948ZM34.69 41.8948L37.9861 31.0616C38.1161 30.6244 37.9525 30.1541 37.578 29.8871L22.5791 19.4026V41.8948H34.69ZM19.036 2.1159H30.5242V11.9548H22.1496V8.58014C22.158 8.02265 21.9408 7.485 21.5457 7.08579C21.1511 6.68699 20.6109 6.45928 20.0451 6.4535H19.036V2.1159ZM20.0023 8.5694H12.4867V11.9548H20.0023V8.5694ZM10.0173 14.0707H32.9936V24.0791L22.1282 16.4933C21.7562 16.2288 21.2546 16.2288 20.8826 16.4933L10.0173 24.0791V14.0707ZM5.43287 29.8871C5.05835 30.1541 4.89479 30.6244 5.0248 31.0616L8.32084 41.8948H20.4318V19.4026L5.43287 29.8871Z" fill="white")
-                            p.mb-0 Air 
-                            p.mb-0 Freight
-                .col-3.p-0 
-                    figure
+                .col-6.col-md-3.p-0 
+                    figure.mb-0
                         img.img-fluid(src="./images/cats/shipping.jpeg")
-                        figcaption 
+                        figcaption.p-2.p-lg-4 
                             img.img-fluid(src="./images/svgs/shipping.svg")
-                            //- svg(width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-     path(fill-rule="evenodd" clip-rule="evenodd" d="M36.9447 41.8948H41.9372C42.2195 41.8936 42.4904 42.0035 42.69 42.2002C42.8897 42.397 43.0012 42.6639 43 42.9421C42.9983 43.526 42.5185 43.9983 41.9263 44H1.07366C0.480629 44 0 43.5264 0 42.9421C0 42.3581 0.480629 41.8841 1.07366 41.8841H6.07707L2.96346 31.6645C2.56839 30.3562 3.06034 28.9453 4.18726 28.1522L7.86999 25.5813V14.0497C7.88048 12.8847 8.84551 11.9474 10.0282 11.9548H10.3394V8.58014C10.3394 7.40565 11.3485 6.4535 12.5295 6.4535H16.8887V2.14772C16.8996 0.970339 17.8626 0.0165305 19.0574 0H30.4814C31.6804 0.0148774 32.6505 0.966206 32.6715 2.14772V11.9548H32.9827C33.5514 11.9495 34.0983 12.1677 34.5034 12.5607C34.9085 12.9537 35.138 13.4893 35.1409 14.0497V25.5813L38.8236 28.1626C39.9552 28.9527 40.4479 30.3669 40.0474 31.6749L36.9447 41.8948ZM34.69 41.8948L37.9861 31.0616C38.1161 30.6244 37.9525 30.1541 37.578 29.8871L22.5791 19.4026V41.8948H34.69ZM19.036 2.1159H30.5242V11.9548H22.1496V8.58014C22.158 8.02265 21.9408 7.485 21.5457 7.08579C21.1511 6.68699 20.6109 6.45928 20.0451 6.4535H19.036V2.1159ZM20.0023 8.5694H12.4867V11.9548H20.0023V8.5694ZM10.0173 14.0707H32.9936V24.0791L22.1282 16.4933C21.7562 16.2288 21.2546 16.2288 20.8826 16.4933L10.0173 24.0791V14.0707ZM5.43287 29.8871C5.05835 30.1541 4.89479 30.6244 5.0248 31.0616L8.32084 41.8948H20.4318V19.4026L5.43287 29.8871Z" fill="white")
                             p.mb-0 Shipping 
                             p.mb-0 Freight
-                .col-3.p-0 
-                    figure
+                .col-6.col-md-3.p-0 
+                    figure.mb-0
                         img.img-fluid(src="./images/cats/train.jpeg")
-                        //- figcaption 
-                            //- svg(width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-     path(fill-rule="evenodd" clip-rule="evenodd" d="M36.9447 41.8948H41.9372C42.2195 41.8936 42.4904 42.0035 42.69 42.2002C42.8897 42.397 43.0012 42.6639 43 42.9421C42.9983 43.526 42.5185 43.9983 41.9263 44H1.07366C0.480629 44 0 43.5264 0 42.9421C0 42.3581 0.480629 41.8841 1.07366 41.8841H6.07707L2.96346 31.6645C2.56839 30.3562 3.06034 28.9453 4.18726 28.1522L7.86999 25.5813V14.0497C7.88048 12.8847 8.84551 11.9474 10.0282 11.9548H10.3394V8.58014C10.3394 7.40565 11.3485 6.4535 12.5295 6.4535H16.8887V2.14772C16.8996 0.970339 17.8626 0.0165305 19.0574 0H30.4814C31.6804 0.0148774 32.6505 0.966206 32.6715 2.14772V11.9548H32.9827C33.5514 11.9495 34.0983 12.1677 34.5034 12.5607C34.9085 12.9537 35.138 13.4893 35.1409 14.0497V25.5813L38.8236 28.1626C39.9552 28.9527 40.4479 30.3669 40.0474 31.6749L36.9447 41.8948ZM34.69 41.8948L37.9861 31.0616C38.1161 30.6244 37.9525 30.1541 37.578 29.8871L22.5791 19.4026V41.8948H34.69ZM19.036 2.1159H30.5242V11.9548H22.1496V8.58014C22.158 8.02265 21.9408 7.485 21.5457 7.08579C21.1511 6.68699 20.6109 6.45928 20.0451 6.4535H19.036V2.1159ZM20.0023 8.5694H12.4867V11.9548H20.0023V8.5694ZM10.0173 14.0707H32.9936V24.0791L22.1282 16.4933C21.7562 16.2288 21.2546 16.2288 20.8826 16.4933L10.0173 24.0791V14.0707ZM5.43287 29.8871C5.05835 30.1541 4.89479 30.6244 5.0248 31.0616L8.32084 41.8948H20.4318V19.4026L5.43287 29.8871Z" fill="white")
-                            p.mb-0 Train 
-                            p.mb-0 Freight
-                .col-3.p-0 
-                    figure
+
+                .col-6.col-md-3.p-0 
+                    figure.mb-0
                         img.img-fluid(src="./images/cats/road.jpeg")
-                        //- figcaption
-                            //- svg(width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-     path(fill-rule="evenodd" clip-rule="evenodd" d="M36.9447 41.8948H41.9372C42.2195 41.8936 42.4904 42.0035 42.69 42.2002C42.8897 42.397 43.0012 42.6639 43 42.9421C42.9983 43.526 42.5185 43.9983 41.9263 44H1.07366C0.480629 44 0 43.5264 0 42.9421C0 42.3581 0.480629 41.8841 1.07366 41.8841H6.07707L2.96346 31.6645C2.56839 30.3562 3.06034 28.9453 4.18726 28.1522L7.86999 25.5813V14.0497C7.88048 12.8847 8.84551 11.9474 10.0282 11.9548H10.3394V8.58014C10.3394 7.40565 11.3485 6.4535 12.5295 6.4535H16.8887V2.14772C16.8996 0.970339 17.8626 0.0165305 19.0574 0H30.4814C31.6804 0.0148774 32.6505 0.966206 32.6715 2.14772V11.9548H32.9827C33.5514 11.9495 34.0983 12.1677 34.5034 12.5607C34.9085 12.9537 35.138 13.4893 35.1409 14.0497V25.5813L38.8236 28.1626C39.9552 28.9527 40.4479 30.3669 40.0474 31.6749L36.9447 41.8948ZM34.69 41.8948L37.9861 31.0616C38.1161 30.6244 37.9525 30.1541 37.578 29.8871L22.5791 19.4026V41.8948H34.69ZM19.036 2.1159H30.5242V11.9548H22.1496V8.58014C22.158 8.02265 21.9408 7.485 21.5457 7.08579C21.1511 6.68699 20.6109 6.45928 20.0451 6.4535H19.036V2.1159ZM20.0023 8.5694H12.4867V11.9548H20.0023V8.5694ZM10.0173 14.0707H32.9936V24.0791L22.1282 16.4933C21.7562 16.2288 21.2546 16.2288 20.8826 16.4933L10.0173 24.0791V14.0707ZM5.43287 29.8871C5.05835 30.1541 4.89479 30.6244 5.0248 31.0616L8.32084 41.8948H20.4318V19.4026L5.43287 29.8871Z" fill="white") 
-                            p.mb-0 Road 
-                            p.mb-0 Freight
 
     - 
         const achievements = [
@@ -173,16 +157,16 @@ block content
     +sectionAbout('services', achievements)
 
     section.appointment 
-        .container.p-5 
-            .row.px-5
-                .col-5.ps-5.pe-0.me-5 
+        .container-lg.py-5 
+            .row.px-xl-5
+                .col-lg-5.ps-xxl-5.pe-0.me-5.text-center.text-lg-start
                     h2.page-title How much will i earn?
                     p.text-regular.pt-3.pb-4 Maecenas dignissim, massa sed imperdiet fermentum, metus orci vehicula sapien, eu posuere.
                     .call-us 
                         h5 Call us for consultation
                         h3
                             span +8 (495) 989 20 11
-                .col-6 
+                .col-lg-6 
                     +formSmall()
     section.projects 
         .container-fluid.py-5 
@@ -191,13 +175,13 @@ block content
                     .splide(data-idx="projects")     
                         .splide__track 
                             ul.splide__list 
-                                li.splide__slide.mx-5(data-title="Provide quick tracking your cargo" data-text="Class aptent taciti sociosqu ad litora torquent per conubia nostra")
+                                li.splide__slide.mx-md-1.mx-xl-5(data-title="Provide quick tracking your cargo" data-text="Class aptent taciti sociosqu ad litora torquent per conubia nostra")
                                     img(src="../images/cats/blue-cat-1.jpg", alt="", srcset="")
-                                li.splide__slide.mx-5(data-title="Provide tracking your cargo" data-text="Class aptent taciti sociosqu ad litora ") 
+                                li.splide__slide.mx-md-1.mx-xl-5(data-title="Provide tracking your cargo" data-text="Class aptent taciti sociosqu ad litora ") 
                                     img(src="../images/cats/blue-cat-2.jpg", alt="", srcset="")
-                                li.splide__slide.mx-5(data-title="Provide fast tracking your cargo" data-text="Class aptent taciti  torquent per conubia nostra") 
+                                li.splide__slide.mx-md-1.mx-xl-5(data-title="Provide fast tracking your cargo" data-text="Class aptent taciti  torquent per conubia nostra") 
                                     img(src="../images/cats/blue-cat-3.jpg", alt="", srcset="")
-                                li.splide__slide.mx-5(data-title="Quick tracking your cargo" data-text="Aptent taciti sociosqu ad litora torquent per conubia nostra") 
+                                li.splide__slide.mx-md-1.mx-xl-5(data-title="Quick tracking your cargo" data-text="Aptent taciti sociosqu ad litora torquent per conubia nostra") 
                                     img(src="../images/cats/blue-cat-4.jpg", alt="", srcset="")
                         .splide-label
                             h5 Provide quick tracking your cargo
@@ -207,7 +191,7 @@ block content
                                     path(d="M7.33594 2.5625H0.28125C0.117188 2.5625 0 2.70312 0 2.84375V4.15625C0 4.32031 0.117188 4.4375 0.28125 4.4375H7.33594V5.53906C7.33594 6.03125 7.94531 6.28906 8.29688 5.9375L10.3125 3.89844C10.5469 3.6875 10.5469 3.33594 10.3125 3.125L8.29688 1.08594C7.94531 0.734375 7.33594 0.992188 7.33594 1.48438V2.5625Z" fill="white")
 
     section.pricing 
-        .container.p-5 
+        .container-lg.py-5 
             .row.justify-content-center 
                 .col-12.text-center 
                     h2.page-title The right price for you, 
@@ -224,7 +208,7 @@ block content
                     +priceCards('vertical')     
 
     section.section-contacts 
-        .container.p-5 
+        .container-lg.py-5 
             .row.pb-5.justify-content-center 
                 .col-lg-6.text-center 
                     h2.page-title We provide future 

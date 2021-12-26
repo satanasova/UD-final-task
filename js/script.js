@@ -35,7 +35,7 @@ function splideHandler() {
             autoWidth: true
         }).mount();
         
-        splideProjects.on('moved', function(){
+        splideProjects.on('move', function(){
             const activeSlide = $('.splide__slide.is-visible');
             const activeTitle = $(activeSlide).attr('data-title');
             const activeText = $(activeSlide).attr('data-text');

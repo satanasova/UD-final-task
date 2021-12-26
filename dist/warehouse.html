@@ -12,9 +12,10 @@
   </head>
   <body> 
     <header class="header position-absolute start-0 end-0 text-white">
-      <div class="container border-bottom px-5">
-        <div class="row">
-          <div class="header-top d-flex justify-content-between pt-5"><a class="header-logo ps-3" href="./index.html"> <img class="img-fluid" src="../images/logo.png" alt="logo"/></a>
+      <div class="container-lg border-bottom px-4">
+        <div class="row header-top d-flex justify-content-between pt-5">
+          <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0"><a class="header-logo ps-3" href="./index.html"> <img class="img-fluid" src="../images/logo.png" alt="logo"/></a></div>
+          <div class="col-12 col-md-8 text-center text-md-end">
             <div class="header-btns"> 
               <button class="btn btn-primary px-5 me-4">Calculator</button>
               <button class="btn btn-outline-light px-5">Tracking</button>
@@ -22,8 +23,44 @@
           </div>
         </div>
         <div class="row"> 
-          <div class="header-bottom d-flex justify-content-between align-items-center pt-3">
-            <nav class="col-7 nav justify-content-between">
+          <div class="header-bottom d-flex justify-content-between align-items-center pt-5 pb-3 pt-lg-3 pb-lg-0">
+            <div class="mobile-menu d-lg-none"><a class="btn-inline d-flex h-100" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bars"></i></a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header justify-content-end">
+                  <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav>
+                    <div class="nav-item"><a href="./index.html">Home</a>
+                      <ul> 
+                        <li> <a class="nav-link" href="#">Home 2</a></li>
+                        <li> <a class="nav-link" href="#">Home 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav-item"><a href="./about.html">About</a>
+                      <ul>
+                        <li><a class="nav-link" href="./quote.html">Quote</a></li>
+                        <li><a class="nav-link" href="./warehouse.html">Warehouse</a></li>
+                        <li><a class="nav-link" href="./faqs.html">FAQs</a></li>
+                        <li><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li> <a class="nav-link" href="./post.html">Post Details</a></li>
+                        <li><a class="nav-link" href="./404.html">404</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav-item"><a href="./services.html">Services</a>
+                      <ul>
+                        <li><a class="nav-link" href="./service_details.html">Single Service</a></li>
+                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="./calculator.html">Calculator</a></li>
+                      </ul>
+                    </div>
+                    <div class="nav-item"><a href="./prices.html">Prices</a></div>
+                    <div class="nav-item"><a href="./contacts.html">Contacts</a></div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <nav class="desktop-menu d-none d-lg-flex col-7 justify-content-between">
               <div class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./index.html">home</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Home 2</a></li>
@@ -48,7 +85,7 @@
                 </ul>
               </div>
               <div class="nav-item"><a class="nav-link" href="./prices.html">prices</a></div>
-              <div class="nav-item"> <a class="nav-link" href="./contacts.html">contacts   </a></div>
+              <div class="nav-item"><a class="nav-link" href="./contacts.html">contacts</a></div>
             </nav>
             <p class="header-phone mb-0">+8 (495) 989 2011</p>
           </div>
@@ -255,9 +292,9 @@
       </div>
     </section>
     <footer class="footer text-white py-5">
-      <div class="container">
+      <div class="container-lg">
         <div class="row footer-top py-5">
-          <div class="col-4"><a class="header-logo" href="./index.html"> <img class="img-fluid" src="../images/logo.png" alt="logo"/></a>
+          <div class="col-md-6 col-lg-4"><a class="header-logo" href="./index.html"> <img class="img-fluid" src="../images/logo.png" alt="logo"/></a>
             <p class="text-regular pale py-5">Nam laoreet est et dui scelerisque, vel rutrum diam fringilla. In nec convallis nisi. Duis vitae ornare massa, vitae iaculis tellus. Sed ultricies tempus metus ut posuere.</p>
             <div class="social gx-5 d-flex"><a class="social-icon rounded-circle bg-white d-flex justify-content-center align-items-center" href="#"> 
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,7 +307,7 @@
                   <path d="M29.2734 3.33594C28.9453 2.02344 27.9062 0.984375 26.6484 0.65625C24.2969 0 15 0 15 0C15 0 5.64844 0 3.29688 0.65625C2.03906 0.984375 1 2.02344 0.671875 3.33594C0.015625 5.63281 0.015625 10.5547 0.015625 10.5547C0.015625 10.5547 0.015625 15.4219 0.671875 17.7734C1 19.0859 2.03906 20.0703 3.29688 20.3984C5.64844 21 15 21 15 21C15 21 24.2969 21 26.6484 20.3984C27.9062 20.0703 28.9453 19.0859 29.2734 17.7734C29.9297 15.4219 29.9297 10.5547 29.9297 10.5547C29.9297 10.5547 29.9297 5.63281 29.2734 3.33594ZM11.9375 14.9844V6.125L19.7031 10.5547L11.9375 14.9844Z" fill="#00008E"></path>
                 </svg></a></div>
           </div>
-          <div class="col-4 d-flex justify-content-center"> 
+          <div class="col-md-6 col-lg-4 d-flex justify-content-md-center pt-5 pt-md-0">
             <ul class="footer-nav"> 
               <li><a href="#">Calculator </a></li>
               <li><a href="#">Shipment Tracking</a></li>
@@ -280,7 +317,7 @@
               <li><a href="#">Careers </a></li>
             </ul>
           </div>
-          <div class="col-4"> 
+          <div class="col-sm-8 col-md-6 col-lg-4 pt-md-5 pt-lg-0"> 
             <h5>Subscribe </h5>
             <p class="text-regular pale py-4">Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum</p>
             <div class="input-group">
@@ -291,8 +328,8 @@
             </div>
           </div>
         </div>
-        <div class="row footer-bottom pt-5"> 
-          <div class="col-4 footer-contacts d-flex align-items-center py-5 ps-5"> 
+        <div class="row footer-bottom justify-content-center pt-5"> 
+          <div class="col-md-6 col-xl-4 footer-contacts d-flex align-items-center py-5 ps-5"> 
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9895 31.3217L49.7085 37.8785C52.3948 39.6415 52.7932 43.4326 50.5107 45.713L47.6731 48.5473C43.3231 52.893 37.1772 52.6332 31.3994 50.5246C25.5621 48.3937 19.1946 44.071 13.4701 38.3525C7.87779 32.7662 3.62907 26.5729 1.50669 20.9139C-0.971129 14.3076 -0.384141 8.92164 3.20372 5.3372L6.21253 2.33159C6.21333 2.33119 6.21412 2.3304 6.21452 2.3296L7.05727 1.48774C9.35002 -0.802172 13.1702 -0.391558 14.924 2.32643L20.4984 10.0646C20.5096 10.0805 20.5203 10.0964 20.5306 10.1126C21.8198 12.1355 21.5346 14.7329 19.8368 16.4289L15.6286 20.6339C15.3363 20.9251 15.2501 21.3587 15.4078 21.7395C15.4364 21.8082 15.4566 21.8784 15.4693 21.949C15.5762 22.2791 16.3863 24.6218 18.6338 27.5699C21.5811 31.436 25.4851 34.3924 30.2374 36.3562C30.6186 36.5133 31.0535 36.4272 31.345 36.1356L35.5536 31.9319C37.2515 30.2363 39.8516 29.951 41.8767 31.2388C41.916 31.2638 41.9537 31.2916 41.9895 31.3217ZM48.442 39.4685L40.7297 32.9174C39.5224 32.1846 37.9941 32.3659 36.9913 33.368L35.7081 34.6495L48.8622 44.4875L49.0726 44.2769C50.4512 42.9002 50.2017 40.5992 48.5544 39.5515C48.515 39.5265 48.4773 39.4987 48.442 39.4685ZM13.2254 3.44243C13.2357 3.45869 13.2465 3.47496 13.2576 3.49043L18.8296 11.2258C19.5866 12.4363 19.4114 13.9815 18.3991 14.9928L17.1556 16.2353L8.25627 3.16234L8.49496 2.9239C9.87903 1.5413 12.1805 1.80275 13.2254 3.44243ZM14.9078 36.9164C20.4274 42.4301 26.532 46.5854 32.0968 48.6167C36.3174 50.1572 42.196 51.1466 46.2354 47.1111L47.4098 45.9384L34.2557 36.1003L32.7827 37.5722C31.9074 38.4462 30.6035 38.7056 29.4602 38.2331C22.9536 35.5441 18.9746 31.4503 16.7823 28.4891C15.2926 26.4769 13.816 23.7462 13.4951 22.4306C13.0689 21.3087 13.3374 20.0487 14.1913 19.1973L15.6921 17.6973L6.79277 4.62428L4.64141 6.77375C0.873239 10.5375 1.89193 16.1532 3.41024 20.2014C5.43293 25.5945 9.51603 31.5308 14.9078 36.9164Z" fill="white"></path>
             </svg>
@@ -301,7 +338,7 @@
               <p class="contact-details fw-bold mb-0">+8 (495) 989 20 11</p>
             </div>
           </div>
-          <div class="col-4 footer-contacts d-flex align-items-center py-5 ps-5">
+          <div class="col-md-6 col-xl-4 footer-contacts d-flex align-items-center py-5 ps-5">
             <svg width="47" height="52" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9975 38.809C12.6291 31.5396 7.1078 21.32 7.1078 16.0669C7.1078 7.20571 14.2897 0 23.1216 0C31.9536 0 39.1355 7.20571 39.1355 16.0669C39.1355 21.32 33.6142 31.5396 29.2458 38.809C34.4286 39.2016 46.2222 40.6131 46.2222 45.2931C46.2222 49.8988 34.2488 52 23.1111 52C11.9839 52 -5.34058e-05 49.8988 -5.34058e-05 45.2931C0.0105247 40.6131 11.8146 39.2016 16.9975 38.809ZM36.9248 16.0669C36.9248 8.42612 30.7266 2.20735 23.1216 2.20735C15.5061 2.20735 9.30785 8.42612 9.30785 16.0669C9.30785 22.742 19.9062 39.4882 23.1216 44.4122C26.3371 39.4882 36.9248 22.742 36.9248 16.0669ZM44.0221 45.2824C44.0221 46.8106 36.6498 49.782 23.1216 49.782C9.59344 49.782 2.22115 46.8212 2.21058 45.2824C2.21058 44.0939 7.07607 41.5682 18.2879 40.9208C20.3927 44.3273 21.9793 46.7575 22.2014 47.0229C22.9101 47.8612 23.7457 47.4049 24.0313 47.0229C24.2428 46.7363 25.84 44.3273 27.9448 40.9208C39.1566 41.5682 44.0221 44.1045 44.0221 45.2824Z" fill="white"></path>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1111 8.6665C19.3878 8.6665 16.3703 11.8995 16.3703 15.8887C16.3703 19.8779 19.3878 23.1109 23.1111 23.1109C26.8343 23.1109 29.8518 19.8779 29.8518 15.8887C29.8518 11.8995 26.8343 8.6665 23.1111 8.6665ZM23.1111 10.9461C25.658 10.9461 27.7242 13.1598 27.7242 15.8887C27.7242 18.6176 25.658 20.8314 23.1111 20.8314C20.5641 20.8314 18.4979 18.6176 18.4979 15.8887C18.4979 13.1598 20.5641 10.9461 23.1111 10.9461Z" fill="white"></path>
@@ -311,7 +348,7 @@
               <p class="contact-details fw-bold mb-0">4621 Hill Croft Farm Road</p>
             </div>
           </div>
-          <div class="col-4 footer-contacts d-flex align-items-center py-5 ps-5"> 
+          <div class="col-md-6 col-xl-4 footer-contacts d-flex align-items-center py-5 ps-5"> 
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M50.0481 0.170901C50.4927 -0.0766746 51.0362 -0.0537 51.4444 0.229654C51.8603 0.513007 52.0684 1.00828 51.9799 1.49816L44.1797 44.8947C44.1121 45.2776 43.8677 45.6096 43.5167 45.7959C43.1709 45.9823 42.7549 46.0001 42.3857 45.847L25.6569 38.8091L23.3714 50.0309C23.257 50.5976 22.7683 51.0188 22.178 51.0545C22.1604 51.0508 22.1399 51.0513 22.1197 51.0517C22.1131 51.0519 22.1065 51.052 22.1 51.052C21.5436 51.052 21.0444 50.7023 20.865 50.179L15.8704 35.4676L0.888792 30.5638C0.402623 30.4055 0.0594151 29.9818 0.00737339 29.484C-0.0472278 28.9837 0.204937 28.5012 0.646987 28.251L50.0481 0.170901ZM25.2124 35.8378L41.9048 42.8604L48.9353 3.74992L4.44835 29.0373L17.3109 33.2468C17.6983 33.3719 18.0052 33.673 18.1325 34.0534L21.783 44.8107L23.4236 36.7594C23.499 36.3842 23.746 36.0599 24.0944 35.8812C24.4402 35.7 24.851 35.6846 25.2124 35.8378Z" fill="white"></path>
               <path d="M51.5474 0.307944C51.0368 -0.128748 50.2848 -0.0977373 49.81 0.380262L16.4481 33.9752C15.9476 34.4791 15.9476 35.2983 16.4481 35.8022C16.9485 36.3062 17.7621 36.3062 18.2625 35.8022L40.6638 13.2472L24.0109 36.7221C23.6004 37.301 23.7312 38.1099 24.3087 38.5233C24.5371 38.6861 24.7962 38.7636 25.0555 38.7636C25.4533 38.7636 25.851 38.575 26.1 38.2235L51.763 2.04454C52.1479 1.49677 52.0556 0.742093 51.5474 0.307944Z" fill="white"></path>

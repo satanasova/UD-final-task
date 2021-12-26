@@ -1,10 +1,15 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// @import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 // @import '../node_modules/@splidejs/splide/dist/css/splide-core.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
 
 @import './variables';
 @import './base';
+
+// @include fa-icon;
+
 
 
 .header {
@@ -16,8 +21,45 @@
     }
 
     &-bottom {
-        .nav {
-            &-item {
+        .mobile-menu {
+            .bars {
+                width: 2rem;
+                height: 2px;
+                background-color: $color_highlight;
+                box-shadow: 0 10px 0 $color_highlight, 0 -10px 0 $color_highlight;
+                transform: translateY(15px);
+            }
+
+            .offcanvas {
+                background: linear-gradient(135deg, #017280 0%, #00008E 100%);
+                &-body {
+                    font-size: .9em;
+                    nav {
+                        .nav-item {
+                            margin-bottom: 1rem;
+                            a:hover {
+                                background-color: rgba(255, 255, 255, 0.5);
+                                
+                            }
+                            &>a {
+                                display: block;
+                                border-bottom: 1px solid white;
+                                padding: 1rem;
+                                background-color: rgba(255, 255, 255, 0.2);
+                            }
+
+                            .nav-link {
+                                padding: .5rem 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        nav.desktop-menu {
+            .nav-item {
                 position: relative;
                 &::after {
                     content: '';

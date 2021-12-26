@@ -1,5 +1,15 @@
 @import './variables';
 
+html {
+    @media only screen and(max-width: 36em) {  // sm 576px /16px default
+        font-size: 80%;
+    }; 
+    // @media only screen and(max-width: 48em) {  // sm 768px /16px default
+    //     font-size: 90%;
+    // };    
+
+}
+
 body {
     font-family: $font-primary;
     color: $color_body;
@@ -93,6 +103,9 @@ body {
     h1 {
         font-size: 4.875rem; //78px 
         font-weight: 700;
+        @media only screen and(max-width: 48em) {  // md 768px /16px default
+            font-size: 3.2rem;
+        }
     }
 
     h2 {
@@ -101,6 +114,9 @@ body {
 
     h3 {
         font-size: 3rem; //48px
+        @media only screen and(max-width: 75em) {  // xl 1200px /16px default
+            font-size: 2.5rem;
+        }
         span {
             color: $color-primary;
         }
