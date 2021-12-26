@@ -16,10 +16,16 @@
                 opacity: 1;
                 &--prev{
                     left: 40%;
+                    @media only screen and(max-width: 75em)  {  // xl 1200px /16px default
+                        left: 25%;
+                    }
                 }
 
                 &--next{
                     right: 40%;
+                    @media only screen and(max-width: 75em)  {  // xl 1200px /16px default
+                        right: 25%;
+                    }
                 }
             }
         }

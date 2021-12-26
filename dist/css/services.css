@@ -43,8 +43,14 @@
     opacity: 1; }
     .freights .splide .splide__arrows .splide__arrow--prev {
       left: 40%; }
+      @media only screen and (max-width: 75em) {
+        .freights .splide .splide__arrows .splide__arrow--prev {
+          left: 25%; } }
     .freights .splide .splide__arrows .splide__arrow--next {
       right: 40%; }
+      @media only screen and (max-width: 75em) {
+        .freights .splide .splide__arrows .splide__arrow--next {
+          right: 25%; } }
   .freights .splide .splide__pagination--custom li button.splide__pagination__page {
     font-family: "Rubik", sans-serif;
     background-color: transparent;
