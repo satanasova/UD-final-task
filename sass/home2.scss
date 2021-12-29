@@ -1,0 +1,19 @@
+@import './variables';
+@import '../components/hero/hero.scss';
+
+
+.header2 {
+    .header-top {
+        background-color: $color_primary-dark;
+    }
+
+    .header-bottom {
+        .mobile-menu {
+            .bars {
+                transform: unset;
+                background-color: $color-title;
+                box-shadow: 0 10px 0 $color-title, 0 -10px 0 $color-title;
+            }
+        }
+    }
+}

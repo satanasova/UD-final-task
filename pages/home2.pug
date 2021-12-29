@@ -1,0 +1,136 @@
+include ../components/hero/hero
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="./css/home2.css")
+        script(type="module" src="./js/script.js") 
+
+header.header.header2.position-absolute.start-0.end-0
+    .header-top.py-3.text-white 
+        .container-lg.px-5
+            .row.align-items-center
+                .col-12.col-md-8.mb-4.mb-md-0
+                    ul.d-flex.mb-0.text-regular.justify-content-center.justify-content-md-start
+                        li.me-5 Trucks
+                        li.me-5 Careers
+                        li.me-5 Team
+                        li Blog
+                .col-12.col-md-4.text-center.text-md-end.pe-4
+                    .header-social 
+                        a(href="#") 
+                            img.img-fluid(src="./images/svgs/fb.svg")
+                        a.ms-5(href="#") 
+                            img.img-fluid(src="./images/svgs/linkedin.svg")
+                        a.ms-5(href="#") 
+                            img.img-fluid(src="./images/svgs/twitter.svg")
+
+    .header-bottom.py-4.bg-white
+        .container-lg.px-5
+            .row.justify-content-between.align-items-center
+                .col.mobile-menu.d-lg-none.text-white
+                    a.btn-inline.d-flex.py-3(data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample")
+                        <i class="bars"></i>
+                    .offcanvas.offcanvas-start(tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel")
+                        .offcanvas-header.justify-content-end
+                            button(type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close")
+                        .offcanvas-body
+                            nav
+                                .nav-item
+                                    a(href="./index.html") Home
+                                    ul
+                                        li 
+                                            a(class="nav-link" href="./home2.html") Home 2
+                                        li 
+                                            a(class="nav-link" href="#") Home 3
+                                .nav-item
+                                    a(href="./about.html") About
+                                    ul
+                                        li
+                                            a(class="nav-link" href="./quote.html") Quote
+                                        li
+                                            a(class="nav-link" href="./warehouse.html") Warehouse
+                                        li
+                                            a(class="nav-link" href="./faqs.html") FAQs
+                                        li
+                                            a(class="nav-link" href="./blog.html") Blog
+                                        li 
+                                            a(class="nav-link" href="./post.html") Post Details
+                                        li
+                                            a(class="nav-link" href="./404.html") 404
+                                .nav-item
+                                    a(href="./services.html") Services
+                                    ul
+                                        li
+                                            a(class="nav-link" href="./service_details.html") Single Service
+                                        li
+                                            a(class="nav-link" href="./projects.html") Projects
+                                        li
+                                            a(class="nav-link" href="./calculator.html") Calculator
+
+                                .nav-item
+                                    a(href="./prices.html") Prices
+                                .nav-item
+                                    a(href="./contacts.html") Contacts
+
+                .col-10.col-lg-4.text-end.text-lg-start
+                    a(href="./index.html") 
+                        img.img-fluid(src="./images/logo-colored.png")
+                .col-8.me-0
+                    nav(class="desktop-menu d-none d-lg-flex justify-content-between")
+                        .nav-item.dropdown
+                            a(class="nav-link dropdown-toggle" href="./index.html").
+                                home
+                            ul(class="dropdown-menu")
+                                li
+                                    a(class="dropdown-item" href="./home2.html") Home 2
+                                li
+                                    a(class="dropdown-item" href="#") Home 3
+                        
+                        .nav-item.dropdown
+                            a(class="nav-link dropdown-toggle" href="./about.html").
+                                about
+                            ul(class="dropdown-menu")
+                                li
+                                    a(class="dropdown-item" href="./quote.html") Quote
+                                li
+                                    a(class="dropdown-item" href="./warehouse.html") Warehouse
+                                li
+                                    a(class="dropdown-item" href="./faqs.html") FAQs
+                                li
+                                    a(class="dropdown-item" href="./blog.html") Blog
+                                li 
+                                    a(class="dropdown-item" href="./post.html") Post Details
+                                li
+                                    a(class="dropdown-item" href="./404.html") 404
+
+                        .nav-item.dropdown
+                            a(class="nav-link dropdown-toggle" href="./services.html").
+                                services
+                            ul(class="dropdown-menu" )
+                                li
+                                    a(class="dropdown-item" href="./service_details.html") Single Service
+                                li
+                                    a(class="dropdown-item" href="./projects.html") Projects
+                                li
+                                    a(class="dropdown-item" href="./calculator.html") Calculator
+
+                        .nav-item
+                            a(class="nav-link" href="./prices.html") prices
+                        .nav-item
+                            a(class="nav-link" href="./contacts.html") contacts
+
+
++hero()
+    .container-lg.py-5 
+        .row.ps-3.py-5 
+            .col-10
+                h1 Deliver Packages
+                    br
+                    |in any Way
+            .col-7
+                p.text-regular.py-4 Curabitur congue finibus lorem, at dignissim metus elementum sit amet. Mauris eget dapibus quam. Integer a ante rutrum, semper risus a, blandit elit. Nunc dolor purus, condimentum ut lorem in, tincidunt consequat erat.
+                button.btn.btn-primary.btn-arrow.px-5 Consultation
