@@ -35,7 +35,8 @@
   .post .post-img {
     min-height: 44.0625rem;
     background: url("../images/cats/air.jpeg") no-repeat center;
-    background-size: cover; }
+    background-size: cover;
+    box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
   .post .post-content .quote {
     border-left: 10px solid #00008E;
     font-weight: 500; }
