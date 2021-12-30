@@ -96,6 +96,50 @@ function sort() {
     }
 }
 
+function tabs() {
+    if($('.tab-container')){
+        const tabContainer = $('.tab-container');
+        const tabsRow = tabContainer.find('.tabs-row');
+        const tabs = tabsRow.find('.tab');
+        const contentsRow = tabContainer.find('.contents-row');
+        const contents = contentsRow.find('.tab-content');
+        console.log(contents);
+
+        contents.each((idx,content) => {
+            $(content).hide()
+            if($(content).hasClass('active')){
+                $(content).fadeIn();
+            }
+        })
+
+        tabsRow.on('click', (e) => {
+            const target = e.target;
+            const clickedTab = $(target).closest('.tab');
+            if(!clickedTab.hasClass('active')){
+                const tabIndex = clickedTab.attr('data-idx');
+
+                tabs.each((idx,tab) => {
+                    $(tab).removeClass('active');
+                })
+                $(clickedTab).addClass('active');
+
+
+                contents.each((idx,content) => {
+                    const contentIndex = $(content).attr('data-idx');
+                    $(content).removeClass('active');
+                    $(content).fadeOut().hide();
+                    if(contentIndex === tabIndex){
+                        $(content).addClass('active');
+                        $(content).fadeIn();
+                    }
+                })
+            }
+
+        })
+    }
+}
+
 navItemActive();
 splideHandler();
 sort();
+tabs();

@@ -17,3 +17,48 @@
         }
     }
 }
+
+.hero {
+    padding-bottom: 10.75rem;
+}
+
+.services {
+    .tabs-row {
+        position: relative;
+        transform: translateY(-50%);
+        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+
+        .tab {
+            cursor: pointer;
+            min-height: 12.375rem;//198px
+            background-color: white;
+            transition: all .3s ease-in-out;
+            h5 {
+                font-size: 1.375rem; //22px
+            }
+            .white-svg {
+                display: none;
+            }
+            .colored-svg {
+                display: block;
+            }
+            &.active {
+                color: white;
+                background: linear-gradient(135deg, #00008E 0%, #017280 100%);
+                .tab-inner {
+                    border-right: none !important;
+                    h5 {
+                        color: inherit;
+                    }
+                    .colored-svg {
+                        display: none;
+                    }
+                    .white-svg {
+                        display: block;
+                    }
+    
+                }
+            }
+        }
+    }
+}

@@ -9,9 +9,11 @@ html(lang="en")
         link(rel="stylesheet", href="./css/home2.css")
         script(type="module" src="./js/script.js") 
 
+        title Home 2
+
 header.header.header2.position-absolute.start-0.end-0
     .header-top.py-3.text-white 
-        .container-lg.px-5
+        .container-lg
             .row.align-items-center
                 .col-12.col-md-8.mb-4.mb-md-0
                     ul.d-flex.mb-0.text-regular.justify-content-center.justify-content-md-start
@@ -29,11 +31,11 @@ header.header.header2.position-absolute.start-0.end-0
                             img.img-fluid(src="./images/svgs/twitter.svg")
 
     .header-bottom.py-4.bg-white
-        .container-lg.px-5
+        .container-lg
             .row.justify-content-between.align-items-center
                 .col.mobile-menu.d-lg-none.text-white
                     a.btn-inline.d-flex.py-3(data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample")
-                        <i class="bars"></i>
+                        i.bars
                     .offcanvas.offcanvas-start(tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel")
                         .offcanvas-header.justify-content-end
                             button(type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close")
@@ -123,10 +125,9 @@ header.header.header2.position-absolute.start-0.end-0
                         .nav-item
                             a(class="nav-link" href="./contacts.html") contacts
 
-
 +hero()
     .container-lg.py-5 
-        .row.ps-3.py-5 
+        .row.py-5 
             .col-10
                 h1 Deliver Packages
                     br
@@ -134,3 +135,41 @@ header.header.header2.position-absolute.start-0.end-0
             .col-7
                 p.text-regular.py-4 Curabitur congue finibus lorem, at dignissim metus elementum sit amet. Mauris eget dapibus quam. Integer a ante rutrum, semper risus a, blandit elit. Nunc dolor purus, condimentum ut lorem in, tincidunt consequat erat.
                 button.btn.btn-primary.btn-arrow.px-5 Consultation
+
+section.services 
+    .container-lg.tab-container
+        .row.tabs-row
+            .col-4.px-0 
+                .tab.py-3.ps-5.active(data-idx="1")
+                    .tab-inner.py-5.d-flex.align-items-center.border-end
+                        .tab-icon 
+                            img.colored-svg(src="./images/svgs/truck.svg")
+                            img.white-svg(src="./images/svgs/truck-white.svg")
+                        .tab-content.px-3
+                            h5.page-title Road Freight
+                            p.text-regular.pale.mb-0 Ut consequat rhoncus nisi vel mollis. Lorem ips
+            .col-4.px-0 
+                .tab.py-3.ps-5(data-idx="2")
+                    .tab-inner.py-5.d-flex.align-items-center.border-end
+                        .tab-icon 
+                            img.colored-svg(src="./images/svgs/cargo-ship.svg")
+                            img.white-svg(src="./images/svgs/cargo-ship-white.svg")
+                        .tab-content.px-3
+                            h5.page-title Shipping Freight
+                            p.text-regular.pale.mb-0 Quisque cidunt malesuada tincidunt. In mattis rut
+            .col-4.px-0 
+                .tab.py-3.ps-5(data-idx="3")
+                    .tab-inner.py-5.d-flex.align-items-center
+                        .tab-icon
+                            img.colored-svg(src="./images/svgs/fast-delivery.svg")
+                            img.white-svg(src="./images/svgs/fast-delivery-white.svg")
+                        .tab-content.px-3
+                            h5.page-title Air Freight
+                            p.text-regular.pale.mb-0 Duis tempor risus vel sollicitudin euism
+
+        .row.contents-row
+            .col-12
+                .tab-content.active(data-idx="1") Road
+                .tab-content(data-idx="2") Ship
+                .tab-content(data-idx="3") Air
+

@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/home2.css"/>
     <script type="module" src="./js/script.js"> </script>
+    <title>Home 2</title>
   </head>
 </html>
 <header class="header header2 position-absolute start-0 end-0">
   <div class="header-top py-3 text-white"> 
-    <div class="container-lg px-5">
+    <div class="container-lg">
       <div class="row align-items-center">
         <div class="col-12 col-md-8 mb-4 mb-md-0">
           <ul class="d-flex mb-0 text-regular justify-content-center justify-content-md-start">
@@ -28,7 +29,7 @@
     </div>
   </div>
   <div class="header-bottom py-4 bg-white">
-    <div class="container-lg px-5">
+    <div class="container-lg">
       <div class="row justify-content-between align-items-center">
         <div class="col mobile-menu d-lg-none text-white"><a class="btn-inline d-flex py-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bars"></i></a>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -102,13 +103,59 @@
 </header>
 <section class="hero text-white overflow-hidden">
   <div class="container-lg py-5"> 
-    <div class="row ps-3 py-5"> 
+    <div class="row py-5"> 
       <div class="col-10">
         <h1>Deliver Packages<br/>in any Way</h1>
       </div>
       <div class="col-7">
         <p class="text-regular py-4">Curabitur congue finibus lorem, at dignissim metus elementum sit amet. Mauris eget dapibus quam. Integer a ante rutrum, semper risus a, blandit elit. Nunc dolor purus, condimentum ut lorem in, tincidunt consequat erat.</p>
         <button class="btn btn-primary btn-arrow px-5">Consultation</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services"> 
+  <div class="container-lg tab-container">
+    <div class="row tabs-row">
+      <div class="col-4 px-0"> 
+        <div class="tab py-3 ps-5 active" data-idx="1">
+          <div class="tab-inner py-5 d-flex align-items-center border-end">
+            <div class="tab-icon"> <img class="colored-svg" src="./images/svgs/truck.svg"/><img class="white-svg" src="./images/svgs/truck-white.svg"/></div>
+            <div class="tab-content px-3">
+              <h5 class="page-title">Road Freight</h5>
+              <p class="text-regular pale mb-0">Ut consequat rhoncus nisi vel mollis. Lorem ips</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 px-0"> 
+        <div class="tab py-3 ps-5" data-idx="2">
+          <div class="tab-inner py-5 d-flex align-items-center border-end">
+            <div class="tab-icon"> <img class="colored-svg" src="./images/svgs/cargo-ship.svg"/><img class="white-svg" src="./images/svgs/cargo-ship-white.svg"/></div>
+            <div class="tab-content px-3">
+              <h5 class="page-title">Shipping Freight</h5>
+              <p class="text-regular pale mb-0">Quisque cidunt malesuada tincidunt. In mattis rut</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 px-0"> 
+        <div class="tab py-3 ps-5" data-idx="3">
+          <div class="tab-inner py-5 d-flex align-items-center">
+            <div class="tab-icon"><img class="colored-svg" src="./images/svgs/fast-delivery.svg"/><img class="white-svg" src="./images/svgs/fast-delivery-white.svg"/></div>
+            <div class="tab-content px-3">
+              <h5 class="page-title">Air Freight</h5>
+              <p class="text-regular pale mb-0">Duis tempor risus vel sollicitudin euism</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row contents-row">
+      <div class="col-12">
+        <div class="tab-content active" data-idx="1">Road</div>
+        <div class="tab-content" data-idx="2">Ship</div>
+        <div class="tab-content" data-idx="3">Air</div>
       </div>
     </div>
   </div>
