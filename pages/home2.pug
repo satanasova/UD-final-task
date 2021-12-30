@@ -1,4 +1,5 @@
 include ../components/hero/hero
+include ../components/mini-card/mini-card
 
 html(lang="en")
     head
@@ -137,39 +138,46 @@ header.header.header2.position-absolute.start-0.end-0
                 button.btn.btn-primary.btn-arrow.px-5 Consultation
 
 section.services 
-    .container-lg.tab-container
+    .container-lg.tab-container.pb-5
         .row.tabs-row
-            .col-4.px-0 
-                .tab.py-3.ps-5.active(data-idx="1")
-                    .tab-inner.py-5.d-flex.align-items-center.border-end
-                        .tab-icon 
-                            img.colored-svg(src="./images/svgs/truck.svg")
-                            img.white-svg(src="./images/svgs/truck-white.svg")
-                        .tab-content.px-3
-                            h5.page-title Road Freight
-                            p.text-regular.pale.mb-0 Ut consequat rhoncus nisi vel mollis. Lorem ips
-            .col-4.px-0 
-                .tab.py-3.ps-5(data-idx="2")
-                    .tab-inner.py-5.d-flex.align-items-center.border-end
-                        .tab-icon 
-                            img.colored-svg(src="./images/svgs/cargo-ship.svg")
-                            img.white-svg(src="./images/svgs/cargo-ship-white.svg")
-                        .tab-content.px-3
-                            h5.page-title Shipping Freight
-                            p.text-regular.pale.mb-0 Quisque cidunt malesuada tincidunt. In mattis rut
-            .col-4.px-0 
-                .tab.py-3.ps-5(data-idx="3")
+            - let tabId=0
+            mixin tab(title,text,svg,activeClass)
+                - tabId++
+                .tab.py-3.ps-5.h-100(data-idx=`${tabId}` class= activeClass)
                     .tab-inner.py-5.d-flex.align-items-center
-                        .tab-icon
-                            img.colored-svg(src="./images/svgs/fast-delivery.svg")
-                            img.white-svg(src="./images/svgs/fast-delivery-white.svg")
+                        .tab-icon 
+                            img.colored-svg(src=`./images/svgs/${svg}.svg`)
+                            img.white-svg(src=`./images/svgs/${svg}-white.svg`)
                         .tab-content.px-3
-                            h5.page-title Air Freight
-                            p.text-regular.pale.mb-0 Duis tempor risus vel sollicitudin euism
+                            h5.page-title= title
+                            p.text-regular.pale.mb-0= text
+
+            .col-4.tab-col.px-0 
+                +tab('Road Freight','Ut consequat rhoncus nisi vel mollis. Lorem ips','truck','active')
+            .col-4.tab-col.px-0 
+                +tab('Shipping Freight','Quisque cidunt malesuada tincidunt. In mattis rut','cargo-ship')
+            .col-4.tab-col.px-0 
+                +tab('Air Freight','Duis tempor risus vel sollicitudin euism','fast-delivery')
 
         .row.contents-row
-            .col-12
-                .tab-content.active(data-idx="1") Road
-                .tab-content(data-idx="2") Ship
-                .tab-content(data-idx="3") Air
+            - let id=0;
+            mixin tabContent(title,text,activeClass)
+                - id++
+                .tab-content(data-idx=`${id}` class= activeClass)
+                    .row.align-items-center 
+                        .col-5 
+                            .tab-content-img
+                        .col-7
+                            h2.page-title.pt-5= title
+                            p.text-regular.py-5= text
+                            .row.tab-content-contacts 
+                                .col-6
+                                    +miniCard('address','primary','Address',['4621 Hill Croft Farm', 'Road'])
+                                .col-6 
+                                    +miniCard('phone-call','secondary','Phone',['+8 (495) 989 20 11', '+8 (495) 969 60 12'])
+            .col-12.px-0
+                +tabContent('Powerfull Features of Transporterium', 'Nam fringilla commodo lobortis. Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic', 'active')
+                +tabContent('Powerfull Features of Transporterium', 'Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic')
+                +tabContent('Powerfull Features of Transporterium', 'Pellentesque dignissim tempor erat dapibus hendrerit. Nam fringilla commodo lobortis. Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic')
+
 

@@ -13,6 +13,16 @@
     white-space: nowrap;
     user-select: none; }
 
+.mini-card {
+  box-shadow: 0px 2px 15px rgba(0, 0, 142, 0.100262); }
+  .mini-card-icon {
+    min-width: 7.375rem;
+    min-height: 7.375rem; }
+    .mini-card-icon.primary {
+      background-color: #0F0FB1; }
+    .mini-card-icon.secondary {
+      background-color: #2e8995; }
+
 .header2 .header-top {
   background-color: #00008E; }
 
@@ -21,13 +31,12 @@
   background-color: #19456b;
   box-shadow: 0 10px 0 #19456b, 0 -10px 0 #19456b; }
 
-.hero {
-  padding-bottom: 10.75rem; }
-
 .services .tabs-row {
   position: relative;
   transform: translateY(-50%);
   box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .services .tabs-row .tab-col:not(:last-child) .tab-inner {
+    border-right: 1px solid #E1E1E1; }
   .services .tabs-row .tab {
     cursor: pointer;
     min-height: 12.375rem;
@@ -43,10 +52,28 @@
       color: white;
       background: linear-gradient(135deg, #00008E 0%, #017280 100%); }
       .services .tabs-row .tab.active .tab-inner {
-        border-right: none !important; }
+        border-right: none; }
         .services .tabs-row .tab.active .tab-inner h5 {
           color: inherit; }
         .services .tabs-row .tab.active .tab-inner .colored-svg {
           display: none; }
         .services .tabs-row .tab.active .tab-inner .white-svg {
           display: block; }
+
+.services .contents-row .tab-content-img {
+  min-height: 37.8125rem; }
+
+.services .contents-row .tab-content:first-child .tab-content-img {
+  background: url("../images/cats/blue-cat-1.jpg") no-repeat center;
+  background-size: cover; }
+
+.services .contents-row .tab-content:nth-child(2) .tab-content-img {
+  background: url("../images/cats/blue-cat-2.jpg") no-repeat center;
+  background-size: cover; }
+
+.services .contents-row .tab-content:nth-child(3) .tab-content-img {
+  background: url("../images/cats/blue-cat-3.jpg") no-repeat center;
+  background-size: cover; }
+
+.services .contents-row .tab-content-contacts {
+  transform: translateX(-5rem); }
