@@ -124,3 +124,20 @@ form .form-check-input:checked {
     top: 0;
     left: 0;
     transform: translateY(-100%); }
+
+.steps-row {
+  padding-top: 6rem; }
+  .steps-row .step {
+    position: relative; }
+    .steps-row .step-watermark {
+      position: absolute;
+      left: -3%;
+      top: -95%;
+      font-size: 12.5rem;
+      line-height: 12.5rem;
+      font-weight: 700;
+      opacity: .3; }
+      .steps-row .step-watermark.primary {
+        color: #00008E; }
+      .steps-row .step-watermark.secondary {
+        color: #2e8995; }
