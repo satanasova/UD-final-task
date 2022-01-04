@@ -3,6 +3,7 @@ import './bootstrap.bundle.min.js';
 import './splide.min.js';
 
 
+
 function navItemActive() {
     const pagePath = window.location.pathname;
     let currentPage = pagePath.substring(
@@ -103,7 +104,6 @@ function tabs() {
         const tabs = tabsRow.find('.tab');
         const contentsRow = tabContainer.find('.contents-row');
         const contents = contentsRow.find('.tab-content');
-        console.log(contents);
 
         contents.each((idx,content) => {
             $(content).hide()
@@ -139,7 +139,54 @@ function tabs() {
     }
 }
 
+function counters() {
+    let counterElements;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        counterElements = $('.count').map((i, el) => {
+            // console.log(el, el.offsetTop);
+            return {
+                elementTop: el.offsetTop,
+                element: el, 
+                isStarted: false
+            }
+        });
+
+        checkCounters();
+    })
+
+    document.addEventListener('scroll', checkCounters)
+
+    function checkCounters() {
+        // console.log('checking counters');
+        if(counterElements.toArray().every(el => el.isStarted)){
+            //when all counters are started - remove the scroll event listener
+            document.removeEventListener('scroll', checkCounters);
+        } 
+
+        let currentScroll = window.scrollY + window.innerHeight;
+        // console.log('cur scroll: ', currentScroll);
+        counterElements.each((i, counterElement) => {
+            if (!counterElement.isStarted && (currentScroll - 50) > counterElement.elementTop) { 
+                // console.log('start element', counterElement.element);
+                counterElement.isStarted = true;
+
+                $(counterElement.element).prop('Counter',0).animate({
+                    Counter: $(counterElement.element).text()
+                }, {
+                    duration: 2500,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(counterElement.element).text(Math.ceil(now));
+                    }
+                });
+            }
+        })
+    }
+}
+
 navItemActive();
 splideHandler();
 sort();
 tabs();
+counters();

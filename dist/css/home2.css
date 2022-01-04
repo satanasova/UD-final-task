@@ -77,3 +77,17 @@
 
 .services .contents-row .tab-content-contacts {
   transform: translateX(-5rem); }
+
+.banner {
+  padding: 17.5rem 0;
+  background: linear-gradient(135deg, rgba(0, 0, 142, 0.6) 0%, rgba(1, 114, 128, 0.6) 100%); }
+  .banner .counter-title-plus {
+    font-size: 3rem; }
+    .banner .counter-title-plus span {
+      font-size: 4.875rem;
+      font-weight: 800; }
+  .banner .counter-title-text {
+    font-size: 3.625rem; }
+    .banner .counter-title-text span {
+      font-size: 4.875rem;
+      font-weight: 800; }

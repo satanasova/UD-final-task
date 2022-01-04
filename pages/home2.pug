@@ -160,10 +160,10 @@ section.services
                 +tab('Air Freight','Duis tempor risus vel sollicitudin euism','fast-delivery')
 
         .row.contents-row
-            - let id=0;
+            - let contentId=0;
             mixin tabContent(title,text,activeClass)
-                - id++
-                .tab-content(data-idx=`${id}` class= activeClass)
+                - contentId++
+                .tab-content(data-idx=`${contentId}` class= activeClass)
                     .row.align-items-center 
                         .col-5 
                             .tab-content-img
@@ -180,4 +180,19 @@ section.services
                 +tabContent('Powerfull Features of Transporterium', 'Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic')
                 +tabContent('Powerfull Features of Transporterium', 'Pellentesque dignissim tempor erat dapibus hendrerit. Nam fringilla commodo lobortis. Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic')
 
+section.banner.my-5
+    .container-lg#scroll-to
+        .row.text-white
+            .col-6(data-aos="fade-up")
+                h2 Transporterium services
+            .col-3 
+                .counter-title-plus 
+                    span.count 1255
+                    |+
+                .p.text-regular.pale Delivered packages
+            .col-3
+                .counter-title-text  
+                    span.count 50
+                    |years
+                .p.text-regular.pale Miles driven each of the year
 
