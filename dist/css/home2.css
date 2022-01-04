@@ -23,6 +23,21 @@
     .mini-card-icon.secondary {
       background-color: #2e8995; }
 
+form .form-select {
+  background-image: url("../images/svgs/caret-down.svg"); }
+
+form .form-check-input:focus {
+  box-shadow: none; }
+
+form .form-check-input[type="checkbox"] {
+  border: 1px solid #a3a3a3; }
+
+form .form-check-input:checked {
+  background-color: transparent;
+  border-color: transparent; }
+  form .form-check-input:checked[type="checkbox"] {
+    background-image: url("../images/svgs/check-square.svg"); }
+
 .header2 .header-top {
   background-color: #00008E; }
 
@@ -91,3 +106,21 @@
     .banner .counter-title-text span {
       font-size: 4.875rem;
       font-weight: 800; }
+
+.quote-form .form-container {
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+  transform: translateY(-6rem); }
+  .quote-form .form-container::before {
+    position: absolute;
+    content: 'Request a quote';
+    text-align: center;
+    display: block;
+    width: 17.5rem;
+    padding: 0.5rem 0;
+    background: #FFCC29;
+    color: #19456b;
+    font-weight: 600;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); }

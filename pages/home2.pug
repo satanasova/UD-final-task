@@ -1,5 +1,6 @@
 include ../components/hero/hero
 include ../components/mini-card/mini-card
+include ../components/form-big/form-big
 
 html(lang="en")
     head
@@ -181,7 +182,7 @@ section.services
                 +tabContent('Powerfull Features of Transporterium', 'Pellentesque dignissim tempor erat dapibus hendrerit. Nam fringilla commodo lobortis. Quisque aliquet commodo orci. Pellentesque dignissim tempor erat dapibus hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridic')
 
 section.banner.my-5
-    .container-lg#scroll-to
+    .container-lg
         .row.text-white
             .col-6(data-aos="fade-up")
                 h2 Transporterium services
@@ -196,3 +197,8 @@ section.banner.my-5
                     |years
                 .p.text-regular.pale Miles driven each of the year
 
+section.quote-form 
+    .container-lg.form-container.bg-white
+        .row.justify-content-center.py-5
+            .col-12.col-lg-10.p-5
+                +formBig()

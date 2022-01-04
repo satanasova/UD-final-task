@@ -1,0 +1,66 @@
+mixin formBig()
+    form(action="")
+        .row.g-3.mb-4
+            .col-md-4
+                label.form-label.text-small(for="name") Full Name
+                input.form-control.text-regular(type="text" id="name" placeholder="John Doe" required)
+            .col-md-4
+                label.form-label.text-small(for="email") Email
+                input.form-control.text-regular(type="email" id="email" placeholder="JonhDoe@gmail.com" required)
+            .col-md-4
+                label.form-label.text-small(for="phone") Phone
+                input.form-control.text-regular(type="tel" id="phone" placeholder="+1 234 456 7890")
+        .row.g-3.mb-4
+            .col-md-4 
+                label.form-label.text-small(for="subject") Subject
+                input.form-control.text-regular(type="text" id="subject" placeholder="Road Freight")
+            .col-md-4 
+                label.form-label.text-small(for="delivery-city") Delivery City
+                input.form-control.text-regular(type="text" id="delivery-city" placeholder="New York")
+            .col-md-4 
+                label.form-label.text-small(for="departure-city") City of Departure
+                input.form-control.text-regular(type="text" id="departure-city" placeholder="Las Vegas")
+        .row.g-3.mb-4
+            .col-md-6
+                label.form-label.text-small(for="type") Freight Type
+                select.form-select(id="type")
+                    option(value="1").selected Value 1
+                    option(value="2") Value 2
+                    option(value="3") Value 3
+                    option(value="4") Value 4
+            .col-md-6
+                label.form-label.text-small(for="incoterms") Incoterms
+                select.form-select(id="incoterms")
+                    option(value="1").selected Value 1
+                    option(value="2") Value 2
+                    option(value="3") Value 3
+                    option(value="4") Value 4
+        .row.g-3.mb-4
+            .col-md-3
+                label.form-label.text-small(for="weight") Weight
+                input.form-control.text-regular(type="text" id="weight" placeholder="1")
+            .col-md-3
+                label.form-label.text-small(for="height") Height
+                input.form-control.text-regular(type="text" id="height" placeholder="2")
+            .col-md-3
+                label.form-label.text-small(for="width") Width
+                input.form-control.text-regular(type="text" id="width" placeholder="3")
+            .col-md-3
+                label.form-label.text-small(for="lenght") Lenght
+                input.form-control.text-regular(type="text" id="lenght" placeholder="4")
+        .row.g-3.mb-4
+            .col-md-3.pe-0
+                input.form-check-input(type="checkbox" id="fragille")
+                label.form-check-label.text-regular(for="fragille") Fragille
+            .col-md-3.pe-0
+                input.form-check-input(type="checkbox" id="express")
+                label.form-check-label.text-regular(for="express") Express delivery
+            .col-md-3.pe-0
+                input.form-check-input(type="checkbox" id="insurance" checked)
+                label.form-check-label.text-regular(for="insurance") Insurance
+            .col-md-3.pe-0
+                input.form-check-input(type="checkbox" id="packaging")
+                label.form-check-label.text-regular(for="packaging") Packaging
+        .row
+            .col-12.text-end 
+                button.btn.btn-primary.px-4.mt-4(type="submit") Appointment

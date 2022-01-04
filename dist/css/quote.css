@@ -23,19 +23,19 @@
       .page-title-hover .container {
         width: 60%; } }
 
-.appointment form .form-select {
+form .form-select {
   background-image: url("../images/svgs/caret-down.svg"); }
 
-.appointment form .form-check-input:focus {
+form .form-check-input:focus {
   box-shadow: none; }
 
-.appointment form .form-check-input[type="checkbox"] {
+form .form-check-input[type="checkbox"] {
   border: 1px solid #a3a3a3; }
 
-.appointment form .form-check-input:checked {
+form .form-check-input:checked {
   background-color: transparent;
   border-color: transparent; }
-  .appointment form .form-check-input:checked[type="checkbox"] {
+  form .form-check-input:checked[type="checkbox"] {
     background-image: url("../images/svgs/check-square.svg"); }
 
 .appointment .banner-services {

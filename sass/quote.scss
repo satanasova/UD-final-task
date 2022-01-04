@@ -1,35 +1,9 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/page-title-hover/page-title-hover.scss';
+@import '../components/form-big/form-big.scss';
 
 .appointment {
-    form {
-        .form-select {
-            background-image: url('../images/svgs/caret-down.svg');
-            
-        }
-        
-        .form-check-input {
-            &:focus {
-                box-shadow: none;
-            }
-
-            &[type="checkbox"] {
-                border: 1px solid rgba(163, 163, 163, 1);
-
-            }
-
-            &:checked {
-                background-color: transparent;
-                border-color: transparent;
-                &[type="checkbox"] {
-                    background-image: url('../images/svgs/check-square.svg');
-                }
-            }
-        }
-    }
-
-
     .banner-services {
         min-height: 16.625rem; //266px
         background: linear-gradient(135deg, rgba(0, 0, 142, 0.5) 0%, rgba(1, 114, 128, 0.5) 100%);

@@ -1,6 +1,7 @@
 @import './variables';
 @import '../components/hero/hero.scss';
 @import '../components/mini-card/mini-card.scss';
+@import '../components/form-big/form-big.scss';
 
 
 .header2 {
@@ -120,3 +121,24 @@
     }
 }
  
+.quote-form {
+    .form-container {
+        box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619);
+        transform: translateY(-6rem);
+        &::before {
+            position: absolute;
+            content: 'Request a quote';
+            text-align: center;
+            display: block;
+            width: 17.5rem;//280px
+            padding: 0.5rem 0;
+            background: $color_highlight;
+            color: $color-title;
+            font-weight: 600;
+            font-size: 18px;
+            top: 0;
+            left: 0;
+            transform: translateY(-100%);
+        }
+    }
+}
