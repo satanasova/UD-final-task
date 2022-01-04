@@ -184,7 +184,7 @@ section.services
 section.banner.my-5
     .container-lg
         .row.text-white
-            .col-6(data-aos="fade-up")
+            .col-6
                 h2 Transporterium services
             .col-3 
                 .counter-title-plus 
@@ -237,7 +237,7 @@ section.gallery
                         br
                         |tracking your cargo
                     p.text-regular.pale Class aptent taciti sociosqu ad litora torquent per conubia nostra orci malesuada
-                    p.call-us Call us for consultation 
+                    p.call-us.pt-3 Call us for consultation 
                     h3
                         span.text-white +8 (495) 989 20 11
             .col-2.px-0
@@ -248,3 +248,46 @@ section.gallery
                 img.img-fluid.h-100(src="./images/cats/blue-cat-3.jpg")
             .col-2.px-0
                 img.img-fluid.h-100(src="./images/cats/blue-cat-4.jpg")
+
+section.testimonials 
+    .container-lg.py-5 
+        .row
+            .col-12.text-center 
+                h2.page-title People and companies 
+                    br
+                    |who            
+                    span trust us
+        .row.justify-content-center
+            .col-8 
+                .carousel.slide(data-bs-ride="carousel")
+                    .carousel-inner
+                        mixin testimonial(text,img,name,details)
+                            .testimonial.bg-white.px-5.pt-5.mx-2
+                                .testimonial-text
+                                    p.text-regular= text 
+                                .testimonial-autor
+                                    .row.align-items-end
+                                        .col-3.pe-0
+                                            img.img-fluid(src=`./images/cats/${img}.jpg`)
+                                        .col.px-0
+                                            h5.page-title.mb-0= name 
+                                            p.text-regular.mb-0= details
+
+                        .carousel-item.active 
+                            +testimonial('Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit rhoncus. Donec interdum ante a tellus convallis consequat. In facilisis a lorem sit amet venenatis. Integer imperdiet eget massa consectetur feugiat. Pellentesque gravida magna','blue-cat-1','Brady Jones','CEO, Rondo Company')
+                        .carousel-item
+                            +testimonial('Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit rhoncus. Donec interdum ante a tellus convallis consequat. In facilisis a lorem sit amet venenatis. Integer imperdiet eget massa consectetur feugiat. Pellentesque gravida magna','blue-cat-2','Ken Adams','CEO, Ichiban Company')
+                        .carousel-item
+                            +testimonial('Donec interdum ante a tellus convallis consequat. In facilisis a lorem sit amet venenatis. Integer imperdiet eget massa consectetur feugiat. Pellentesque gravida magnaVivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit rhoncus.','blue-cat-3','Regina Phalange','CEO, SmellyCat Company')
+                        .carousel-item
+                            +testimonial('In facilisis a lorem sit amet venenatis. Vivamus eu luctus nulla. Donec interdum ante a tellus convallis consequat. Integer imperdiet eget massa consectetur feugiat. Pellentesque gravida magna','blue-cat-4','Lesly Bright','CEO, Rolso Company')
+
+        .row.py-5.mt-5
+            .col-3 
+                img.img-fluid.border(src="./images/company-logo-1.jpg")
+            .col-3 
+                img.img-fluid.border(src="./images/company-logo-2.jpg")
+            .col-3 
+                img.img-fluid.border(src="./images/company-logo-3.jpg")
+            .col-3 
+                img.img-fluid.border(src="./images/company-logo-4.jpg")

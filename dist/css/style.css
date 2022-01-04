@@ -7884,6 +7884,8 @@ body {
         font-size: 3.2rem; } }
   body h2, body .h2 {
     font-size: 3.5rem; }
+    body h2 span, body .h2 span {
+      color: #0F0FB1; }
   body h3, body .h3 {
     font-size: 3rem; }
     @media only screen and (max-width: 75em) {

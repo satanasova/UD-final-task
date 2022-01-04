@@ -150,3 +150,17 @@ form .form-check-input:checked {
     font-size: 1.25rem;
     font-weight: 600;
     opacity: .8; }
+
+.testimonials .carousel-inner {
+  padding: 5rem 2rem; }
+
+.testimonials .testimonial {
+  box-shadow: 0px 2px 25px rgba(0, 0, 142, 0.152619); }
+  .testimonials .testimonial-autor {
+    transform: translateY(50%); }
+    .testimonials .testimonial-autor img {
+      width: 8.125rem;
+      height: 8.125rem; }
+    .testimonials .testimonial-autor h5 {
+      font-size: 1.125rem;
+      font-weight: 600; }
