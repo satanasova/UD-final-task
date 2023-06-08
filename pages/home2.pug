@@ -1,6 +1,7 @@
 include ../components/hero/hero
 include ../components/mini-card/mini-card
 include ../components/form-big/form-big
+include ../components/blog-posts/blog-posts
 
 html(lang="en")
     head
@@ -291,3 +292,10 @@ section.testimonials
                 img.img-fluid.border(src="./images/company-logo-3.jpg")
             .col-3 
                 img.img-fluid.border(src="./images/company-logo-4.jpg")
+
+section.blog
+    .container-lg.py-5 
+        .row
+            .col-xl-6 
+                +blogPostBig('air','28 Jan 2021','merkulove','cargo','Air And Sea Transport Are Available','Vivamus eu luctus nulla. Nam sollicitudin quam ac venenatis venenatis. Vivamus ornare velit a eros imperdiet, ac cursus elit')
+            .col-6 

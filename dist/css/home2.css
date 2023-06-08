@@ -38,6 +38,12 @@ form .form-check-input:checked {
   form .form-check-input:checked[type="checkbox"] {
     background-image: url("../images/svgs/check-square.svg"); }
 
+.blog-post-big .img {
+  min-height: 28.4375rem; }
+
+.blog-post-small {
+  overflow: hidden; }
+
 .header2 .header-top {
   background-color: #00008E; }
 
