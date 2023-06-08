@@ -24,7 +24,7 @@ block content
         -stepCount++;
             .step.text-center.mt-5.mt-md-0(class= cl) 
                 .step-icon.d-flex.justify-content-center.align-items-center.m-auto
-                    img.img-fluid(src=`./images/svgs/${icon}.svg`)
+                    img.img-fluid(src=`images/svgs/${icon}.svg`)
                     .step-icon-num.d-flex.justify-content-center.align-items-center= `0${stepCount}`
                 h4.page-title.pt-3= title 
                 p.text-regular= text
@@ -91,7 +91,7 @@ block content
     mixin progressBar(perc,title)
         .progress--bar.text-center 
             .progress--bar-icon.m-auto 
-                img(src=`./images/svgs/progress-${perc}.svg`)
+                img(src=`images/svgs/progress-${perc}.svg`)
                 .circle.bg-white.d-flex.justify-content-center.align-items-center 
                     p.page-title.m-0 #{perc}%
             p.page-title.pt-3= title
